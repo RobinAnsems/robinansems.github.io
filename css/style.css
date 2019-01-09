@@ -35,7 +35,22 @@ nav:nth-child(1) ul {
     width: 72%;
 }
 
-nav:nth-child(1) ul li {
+nav:nth-child(1) ul li:nth-child(1) {
+    list-style-type: none;
+    margin: 0 1em;
+}
+
+nav:nth-child(1) ul li:nth-child(2) {
+    list-style-type: none;
+    margin: 0 1em;
+}
+
+nav:nth-child(1) ul li:nth-child(3) {
+    list-style-type: none;
+    margin: 0 1em;
+}
+
+nav:nth-child(1) ul li:nth-child(4) {
     list-style-type: none;
     margin: 0 1em;
 }
@@ -102,7 +117,7 @@ nav:nth-child(1) ul li input {
     border-style: solid;
     border-right: none;
     border-color: darkgray;
-    border-radius: 0.5em 0.5em 0.5em 0.5em
+    border-radius: 0.5em 0 0 0.5em
     
     
 }
@@ -113,7 +128,7 @@ nav:nth-child(1) ul li input {
 /*HEADER*/
 header {
     align-items: center;
-    background: url(/images/headerfoto1_1920x642.jpg);
+    background: url(/images/headerfoto1_1920x642.svg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -493,3 +508,70 @@ body footer {
         width: 30%;
     }
 }
+
+/*
+@media (min-width: 30em) {
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        justify-content: center;
+        padding: 0;
+        width: 74em;
+    }
+    nav ul li {
+        margin: 0 1.5em;
+    }
+
+    .searchbutton {
+        border-radius: 0.2em;
+        padding: 0.6em 0.6em 0.6em 8em;
+        width: 10em;
+            }
+    header {
+        background-position: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 9em;
+        width: 50%
+    }
+
+    header button {
+        width: 11em;
+    }
+
+    main {
+        width: 89%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main article {
+        width: 49%;
+    }
+
+
+}
+
+@media (min-width: 60em) {
+
+    header {
+        height: 15em;
+    }
+
+
+    main {
+        width: 82%;
+    }
+
+    main article {
+        width: 32.5%;
+    }
+}
+*/
