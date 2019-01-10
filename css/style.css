@@ -560,6 +560,50 @@ body footer {
  }
 
 
+
+
+
+
+/*profiel.html*/
+
+.profiel main img {
+    margin-top: 1em;
+    width: 100%;
+    height: 30%;
+    margin: 1em 20em;
+}
+
+
+
+
+
+
+/*Microinteracties*/
+
+#favorieten:hover {
+	-webkit-transform: scale(1.75);
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-out;
+    -moz-transform: scale(1.75);
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-out;
+	transition-delay: 0.5s;
+ }
+
+#notificatie:hover {
+	-webkit-transform: scale(1.5);
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-out;
+    -moz-transform: scale(1.5);
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-out;
+	transition-delay: 0.5s;
+ }
+
+
+
+
+
 /*MEDIAQUERY'S*/
 
 @media (min-width: 20em) {
