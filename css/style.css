@@ -320,11 +320,13 @@ body form fieldset div input::-webkit-slider-thumb {
 }
 
 body form fieldset div input::-moz-range-thumb {
-  width: 1.25em;
-  height: 1.25em;
-  border-radius: 50%;
-  background: red;
-  cursor: pointer;
+  -webkit-appearance: none;
+    appearance: none;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 1.25em;
+    width: 1.25em;
 }
 
 body form fieldset div p:first-child {
