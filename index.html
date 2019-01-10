@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 
 <body>
@@ -16,7 +17,9 @@
             <li><a href="index.html"><img src="images/ret-logo.png" alt="RET logo"></a></li>
             <li><a href="profiel.html"><img src="images/profiel.svg" alt="profielknop"></a></li>
             <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-            <li><div><input type="search" placeholder="Waar zoek je naar?"><img src="images/zoeken.svg" alt="zoekknop"></div></li>
+            <li>
+                <div><input type="search" placeholder="Waar zoek je naar?"><img src="images/zoeken.svg" alt="zoekknop"></div>
+            </li>
         </ul>
     </nav>
 
@@ -26,101 +29,103 @@
     </header>
 
     <main>
-        <button><img src="images/sorteericoon%20.svg" alt="">Filter- en Sorteeropties
+        <button id="showformulier"><img src="images/sorteericoon%20.svg" alt="">Filter- en Sorteeropties
         </button>
+        <button id="hideformulier"><img src="images/sorteericoon%20.svg" alt="">Filter- en Sorteeropties
+        </button>
+        <div id="formulier">
+            <form action="#">
+                <h2>Filter- en Sorteeropties</h2>
 
-        <form action="#">
-            <h2>Filter- en Sorteeropties</h2>
-
-            <div>
-                <button>Sorteren op:</button>
                 <div>
-                    <a href="#">Meest bekeken</a>
-                    <a href="#">Hoogste reviews</a>
-                    <a href="#">Lengte lang-kort</a>
-                    <a href="#">Lengte kort-lang</a>
-                    <a href="#">Alfabetisch A-Z</a>
-                    <a href="#">Alfabetisch Z-A</a>
+                    <button>Sorteren op:</button>
+                    <div>
+                        <a href="#">Meest bekeken</a>
+                        <a href="#">Hoogste reviews</a>
+                        <a href="#">Lengte lang-kort</a>
+                        <a href="#">Lengte kort-lang</a>
+                        <a href="#">Alfabetisch A-Z</a>
+                        <a href="#">Alfabetisch Z-A</a>
+                    </div>
                 </div>
-            </div>
 
-            <fieldset>
-                <label for="slider1">Maximale leesduur:</label>
-                <div>
-                    <p>1min.</p>
-                    <input type="range" min="1" max="60" value="50" class="slider" id="slider1">
-                    <p>60min.</p>
-                </div>
-                <p>leesduur: <span id="nummer"></span></p>
-            </fieldset>
+                <fieldset>
+                    <label for="slider1">Maximale leesduur:</label>
+                    <div>
+                        <p>1min.</p>
+                        <input type="range" min="1" max="60" value="50" class="slider" id="slider1">
+                        <p>60min.</p>
+                    </div>
+                    <p>leesduur: <span id="nummer"></span></p>
+                </fieldset>
 
-            <fieldset>
-                <label for="slider2">Leesbaarheid:</label>
-                <div>
-                    <p>Makkelijk</p>
-                    <input type="range" min="1" max="60" value="50" class="slider" id="slider2">
-                    <p>Moeilijk</p>
-                </div>
-            </fieldset>
+                <fieldset>
+                    <label for="slider2">Leesbaarheid:</label>
+                    <div>
+                        <p>Makkelijk</p>
+                        <input type="range" min="1" max="60" value="50" class="slider" id="slider2">
+                        <p>Moeilijk</p>
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <span><label>Sfeer:</label></span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer1">
-                    <label for="sfeer1">Liefdevol</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer2">
-                    <label for="sfeer2">Kwaadheid</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer3">
-                    <label for="sfeer3">Rustig</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer4">
-                    <label for="sfeer4">Onrustig</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer5">
-                    <label for="sfeer5">Spannend</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer6">
-                    <label for="sfeer6">Angst</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer7">
-                    <label for="sfeer7">Verdriet</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer8">
-                    <label for="sfeer8">Grimmig</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer9">
-                    <label for="sfeer9">Ontspannen</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer10">
-                    <label for="sfeer10">Plezierig</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer11">
-                    <label for="sfeer11">Feestelijk</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="sfeer12">
-                    <label for="sfeer12">Irritatie</label>
-                </span>
-            </fieldset>
+                <fieldset>
+                    <span><label>Sfeer:</label></span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer1">
+                        <label for="sfeer1">Liefdevol</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer2">
+                        <label for="sfeer2">Kwaadheid</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer3">
+                        <label for="sfeer3">Rustig</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer4">
+                        <label for="sfeer4">Onrustig</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer5">
+                        <label for="sfeer5">Spannend</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer6">
+                        <label for="sfeer6">Angst</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer7">
+                        <label for="sfeer7">Verdriet</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer8">
+                        <label for="sfeer8">Grimmig</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer9">
+                        <label for="sfeer9">Ontspannen</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer10">
+                        <label for="sfeer10">Plezierig</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer11">
+                        <label for="sfeer11">Feestelijk</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer12">
+                        <label for="sfeer12">Irritatie</label>
+                    </span>
+                </fieldset>
 
-            <fieldset>
-                <span><label>Kleuren:</label></span>
-                <span><input type="checkbox" name="#" value="#" id="kleur1">
-                    <label for="kleur1">Zwart/wit</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="kleur2">
-                    <label for="kleur2">Kleurrijk</label>
-                </span>
-                <span><input type="checkbox" name="#" value="#" id="kleur3">
-                    <label for="kleur3">Één dominante kleur</label>
-                </span>
+                <fieldset>
+                    <span><label>Kleuren:</label></span>
+                    <span><input type="checkbox" name="#" value="#" id="kleur1">
+                        <label for="kleur1">Zwart/wit</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="kleur2">
+                        <label for="kleur2">Kleurrijk</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="kleur3">
+                        <label for="kleur3">Één dominante kleur</label>
+                    </span>
 
-            </fieldset>
+                </fieldset>
 
-            <button>Filteren!</button>
+                <button>Filteren!</button>
 
-        </form>
-
+            </form>
+        </div>
         <article>
             <a href="verhaal1.html"><img src="images/verhalen/1-Notitie-procesmatig.png" alt="verhaal"></a>
             <h3>1: Notitie</h3>
@@ -133,9 +138,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -152,9 +157,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -171,9 +176,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -190,9 +195,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -209,9 +214,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -228,9 +233,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -247,9 +252,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -266,9 +271,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -285,9 +290,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -304,9 +309,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -323,9 +328,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -342,9 +347,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -361,9 +366,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -380,9 +385,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -399,9 +404,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -418,9 +423,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -437,9 +442,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -456,9 +461,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img id ="favorieten" src ="images/favoriet.svg" onclick = "veranderHartje()" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -475,9 +480,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -494,9 +499,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -513,16 +518,14 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="downloaden.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="favorieten.html"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="reactie.html"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
 
-
-
-
+        <script src="javascript/jquery.js"></script>
         <script src="javascript/script.js"></script>
     </main>
     <footer>Bronnen gebruikt: Voor de slider met de maximale leesduur heb ik : https://www.w3schools.com/howto/howto_js_rangeslider.asp gebruikt. En voor de dropdown van de sorteerbutton heb ik: https://www.w3schools.com/css/css_dropdowns.asp gebruikt.</footer>

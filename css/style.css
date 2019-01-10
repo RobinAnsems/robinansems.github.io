@@ -72,34 +72,36 @@ nav:nth-child(1) ul li:nth-child(3) img {
 }
 
 nav:nth-child(1) ul li:nth-child(4) img {
-    width: 1.3em;
-    background-color: red;
-    padding: 1em;
-    border-radius: 0 0.2em 0.2em 0;
-}
+	background-color: red;
+	border-radius: 0 0.2em 0.2em 0;
+	padding: 1em;
+	width: 1.3em;
+ }
 
 nav:nth-child(1) ul li:nth-child(4) div {
-    border-color: 10em black;
+    border: 10em black;
     display: flex;
     height: 3em;
     margin: 0;
     padding: 0;
 }
 
+ 
 nav:nth-child(1) ul li input {
-    padding: 1em;
-    font-size: 1em;
-    border-width: 0.2em;
-    border-style: solid;
-    border-right: none;
-    border-color: darkgray;
-    border-radius: 0.2em 0 0 0.2em
-}
+	border-color: darkgray;
+	border-radius: 0.2em 0 0 0.2em;
+	border-right: red;
+	border-style: solid;
+	border-width: 0.2em;
+	font-size: 1em;
+	padding: 1em;
+ }
 
 
 
 
 /*HEADER*/
+
 header {
     align-items: center;
     background: url(/images/headerfoto1_1920x642.svg);
@@ -166,20 +168,32 @@ body main button:nth-child(1) {
     color: white;
     font-size: 1em;
     font-weight: 600;
+    margin: 1em 1em 0 1em;
+    padding: 0 1em 1em 0;
+    width: 16em;
+}
+
+body main button:nth-child(2):hover {
+    background-color: #d4effc;
+    color: #04477f;
+    cursor: pointer;
+}
+
+body main button:nth-child(2) {
+    background-color: #04477f;
+    border: none;
+    border-radius: 0.2em;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
     margin: 1em;
-    padding: 0 0 1em 0;
-    width: 15em;
+    padding: 0 1em 1em 0;
+    width: 16em;
 }
 
 body main button img {
     padding: 1em 1em 0 1em;
     width: 1.3em;
-}
-
-body main button p {
-    float: right;
-    margin: 0;
-    padding: 1em 1em 1em 0;
 }
 
 
@@ -188,6 +202,19 @@ body main button p {
 
 
 /*FORMULIER*/
+
+/*filter- en sorteeropties in- en uitklapbaar bron: https://www.youtube.com/watch?v=sxZhsBLg2Ls*/
+#hideformulier {
+    display: none;
+}
+
+#showformulier {
+    display: true;
+}
+
+#formulier {
+    display: none;
+}
 
 form {
     background-color: white;
@@ -229,7 +256,7 @@ body form div button:first-child {
     font-weight: 600;
     margin: 0 0 1em 0;
     padding: 1em;
-    width: 8em
+    width: 8em;
 }
 
 body form div {
@@ -299,18 +326,21 @@ body form fieldset div {
 
 /*Slider bron: https://www.w3schools.com/howto/howto_js_rangeslider.asp*/
 body form fieldset div input {
-    -webkit-appearance: none;
-    -webkit-transition: .2s;
-    background: #12689e;
-    border-radius: 0.2em;
-    height: 0.75em;
-    opacity: 0.7;
-    transition: opacity .2s;
-    width: 10em;
-}
+	-moz-appearance: none;
+	-moz-transition: .2s;
+	-webkit-appearance: none;
+	-webkit-transition: .2s;
+	background: #12689e;
+	border-radius: 0.2em;
+	height: 0.75em;
+	opacity: 0.7;
+	transition: opacity .2s;
+	width: 10em;
+ }
 
 body form fieldset div input::-webkit-slider-thumb {
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     background: red;
     border-radius: 50%;
@@ -320,8 +350,6 @@ body form fieldset div input::-webkit-slider-thumb {
 }
 
 body form fieldset div input::-moz-range-thumb {
-  -webkit-appearance: none;
-    appearance: none;
     background: red;
     border-radius: 50%;
     cursor: pointer;
@@ -463,6 +491,75 @@ body footer {
 
 
 
+
+
+
+/*Verhaal87.html*/
+
+.verhaal87 main img:nth-child(1) {
+    display: flex;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.verhaal87 main img:nth-child(2) {
+    display: flex;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.verhaal87 main img:nth-child(3) {
+    display: flex;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.verhaal87 main img:nth-child(4) {
+   display: flex;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.verhaal87 footer nav ul {
+    align-items: center;
+    display: flex;
+    height: 4.5em;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 14% 0 14%;
+    width: 72%;
+}
+
+.verhaal87 footer nav ul li {
+    list-style-type: none;
+    margin: 0 1em;
+}
+
+.verhaal87 footer nav ul li:first-child {
+    margin-right: auto;
+}
+
+.verhaal87 footer nav ul li img:nth-child(1) {
+	background-color: white;
+	padding: 0;
+	width: 2em;
+ }
+
+.verhaal87 footer {
+	background-color: white;
+	bottom: 0;
+	font-size: 1.5em;
+	grid-area: footer;
+	left: 0;
+	margin: 1em 0 0 0;
+	padding: 0;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+ }
+
+
 /*MEDIAQUERY'S*/
 
 @media (min-width: 20em) {
@@ -472,19 +569,28 @@ body footer {
         width: 100%;
     }    
 
-     main {
+     body main button:nth-child(1) {
+        margin-right: 3em;
+        min-width: 16em;
+    }
+
+    body main {
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
         width: 95%;
     }
 
-     main article {
-        width: 95%;
+    body main article {
+        width: 100%;
     }
 
-     main form {
-        width: 95%;
+    body main div {
+        width: 100%;
+    }
+
+    body main form div button:nth-child(1) {
+        min-width: 10em;
     }
 }
 
@@ -495,19 +601,28 @@ body footer {
         width: 100%;
     }
 
-    main {
+     body main button:nth-child(1) {
+        margin-right: 20em;
+        min-width: 16em;
+    }    
+
+    body main {
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
         width: 95%;
     }
 
-    main article {
+    body main article {
         width: 47.5%;
     }
 
-    main form {
+    body main form {
         width: 100%;
+    }
+
+    body main form div button:nth-child(1) {
+        min-width: 10em;
     }
 }
 
@@ -518,11 +633,24 @@ body footer {
         width: 72%;
     }    
 
-    main {
+    body main button:nth-child(1) {
+        margin-right: 50em;
+        min-width: 16em;
+    }
+
+    body main form {
+        width: 100%;
+    }   
+
+    body main {
         width:72%;
     }
 
-    main article {
+    body main article {
         width: 31%;
+    }
+
+    body main form div button:nth-child(1) {
+        min-width: 10em;
     }
 }
