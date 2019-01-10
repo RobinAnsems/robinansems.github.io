@@ -455,7 +455,13 @@ body footer {
 
 /*MEDIAQUERY'S*/
 
-@media (max-width: 20em) {
+@media (min-width: 20em) {
+
+    body nav:nth-child(1) ul {
+        padding: 0;
+        width: 100%;
+    }    
+
      main {
         flex-direction: row;
         justify-content: space-between;
@@ -466,9 +472,19 @@ body footer {
      main article {
         width: 95%;
     }
+
+     main form {
+        width: 95%;
+    }
 }
 
 @media (min-width: 40em) {
+
+    body nav:nth-child(1) ul {
+        padding: 0;
+        width: 100%;
+    }
+
     main {
         flex-direction: row;
         justify-content: space-between;
@@ -486,6 +502,11 @@ body footer {
 }
 
 @media (min-width: 60em) {
+
+    body nav:nth-child(1) ul {
+        padding: 0 14% 0 14%;
+        width: 72%;
+    }    
 
     main {
         width:72%;
