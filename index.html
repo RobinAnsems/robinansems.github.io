@@ -16,7 +16,7 @@
         <ul>
             <li><a href="index.html"><img src="images/ret-logo.png" alt="RET logo"></a></li>
             <li><a href="profiel.html"><img src="images/profiel.svg" alt="profielknop"></a></li>
-            <li><a href="favorieten.html"><img id ="notificatie" src="images/favoriet-nav.svg" alt="favorietenknop"></a></li>
+            <li><a href="favorieten.html"><img id="notificatie" src="images/favoriet-nav.svg" alt="favorietenknop"></a></li>
             <li>
                 <div><input type="search" placeholder="Waar zoek je naar?"><img src="images/zoeken.svg" alt="zoekknop"></div>
             </li>
@@ -159,7 +159,7 @@
                 <ul>
                     <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
                     <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img onclick = "deNotificatie()" src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img onclick="deNotificatie()" src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -444,7 +444,7 @@
                 <ul>
                     <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
                     <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="#"><img id="reactieveranderen" onclick="veranderReageer()" src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -461,9 +461,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img id ="favorieten" src ="images/favoriet.svg" onclick = "veranderHartje()" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+                    <li><a href="downloads.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img id="favorieten" src="images/favoriet.svg" onclick="veranderHartje()" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img id="reageerknop" src="images/reactie.svg" alt="reactieknop"></a></li>
                 </ul>
             </nav>
         </article>
@@ -524,11 +524,60 @@
                 </ul>
             </nav>
         </article>
-
-        <script src="javascript/jquery.js"></script>
-        <script src="javascript/script.js"></script>
     </main>
-    <footer>Bronnen gebruikt: Voor de slider met de maximale leesduur heb ik : https://www.w3schools.com/howto/howto_js_rangeslider.asp gebruikt. En voor de dropdown van de sorteerbutton heb ik: https://www.w3schools.com/css/css_dropdowns.asp gebruikt.</footer>
-</body>
 
+    <footer><h4>Bronnen gebruikt:</h4><br>
+        <p><img src="images/pijl-blauw.svg" alt="">Reactie achter laten popup, bron:
+        <a href="https://www.w3schools.com/howto/howto_css_modals.asp">
+            https://www.w3schools.com/howto/howto_css_modals.asp</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
+        <img src="images/pijl-blauw.svg" alt="">Filter- en sorteeropties in- en uitklapbaar, bron:
+        <a href="https://www.youtube.com/watch?v=sxZhsBLg2Ls">
+            https://www.youtube.com/watch?v=sxZhsBLg2Ls</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
+        <img src="images/pijl-blauw.svg" alt="">Slider, bron:
+        <a href="https://www.w3schools.com/howto/howto_js_rangeslider.asp">
+            https://www.w3schools.com/howto/howto_js_rangeslider.asp</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
+        <img src="images/pijl-blauw.svg" alt="">Veranderen van hartje, bron:
+        <a href="https://stackoverflow.com/questions/34102091/changing-images-src-with-event-onclick">
+            https://stackoverflow.com/questions/34102091/changing-images-src-with-event-onclick</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
+        <img src="images/pijl-blauw.svg" alt="">Niet scrolbare website na klikken van link, bron:
+        <a href="https://stackoverflow.com/questions/1601933/how-do-i-stop-a-web-page-from-scrolling-to-the-top-when-a-link-is-clicked-that-t">
+            https://stackoverflow.com/questions/1601933/how-do-i-stop-a-web-page-from-scrolling-to-the-top-when-a-link-is-clicked-that-t</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
+        <img src="images/pijl-blauw.svg" alt="">Dropdownknop, bron:
+        <a href="https://www.w3schools.com/css/css_dropdowns.asp">
+            https://www.w3schools.com/css/css_dropdowns.asp</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
+        <img src="images/pijl-blauw.svg" alt="">RET-Logo en Bannerafbeelding, bron:
+        <a href="https://www.ret.nl/">
+            https://www.ret.nl/</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
+        <img src="images/pijl-blauw.svg" alt="">Under construction foto, bron:
+        <a href="https://www.thesignmaker.co.nz/product/work-in-progress-sign">
+            https://www.thesignmaker.co.nz/product/work-in-progress-sign</a><img src="images/pijl-rood-schuin.svg" alt="">
+        </p>
+    </footer>
+
+    <div id="mijnPopup" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span class="sluiten">&times;</span>
+                <h3>Reactie achterlaten over verhaal 87: 'Code' van Molovich.
+                </h3>
+            </div>
+            <div class="popup-body">
+                <p>Aantal sterren:</p>
+                <img id="rating1" onclick="veranderSter1()" src="images/ster1.svg" alt="ster">
+                <img id="rating2" onclick="veranderSter2()" src="images/ster2.svg" alt="ster">
+                <img id="rating3" onclick="veranderSter3()" src="images/ster3.svg" alt="ster">
+                <img id="rating4" onclick="veranderSter4()" src="images/ster4.svg" alt="ster">
+                <img id="rating5" onclick="veranderSter5()" src="images/ster5.svg" alt="ster">
+                <p>Wat vond je van het verhaal?</p>
+                <textarea name="wat je er van vond" rows="4" cols="50"></textarea>
+            </div>
+            <div class="popup-footer">
+                <button class="versturen">Reactie plaatsen!<img src="images/pijl.svg" alt="plaatsenknop"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
 </html>
