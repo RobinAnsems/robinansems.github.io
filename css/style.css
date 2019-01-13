@@ -144,7 +144,7 @@ header button {
     justify-content: space-between;
     margin: 3em 1em 2.5em 1em;
     padding: 1em;
-    width: 13em;
+    width: 16em;
 }
 
 header button:hover {
@@ -239,11 +239,11 @@ form {
 
 h2 {
     color: #12689e;
-    font-size: 1.3em;
+    font-size: 2em;
     font-weight: 500;
     margin: 0;
     padding: 0;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     text-decoration: none;
     text-shadow: none;
 }
@@ -840,7 +840,7 @@ body div:first-of-type div div:nth-child(3) button img {
     }
 
     body main article {
-        width: 47.5%;
+        width: 48%;
     }
 
     body main form {
@@ -901,7 +901,7 @@ body div:first-of-type div div:nth-child(3) button img {
     }
 
     body main article {
-        width: 31%;
+        width: 31.5%;
     }
 
     body main form div button:nth-child(1) {
