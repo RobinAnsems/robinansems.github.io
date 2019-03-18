@@ -1,583 +1,200 @@
 <!DOCTYPE html>
-<!--FED HTML Robin Ansems studentnummer:500780651 RET Website-->
-<html lang="nl">
+<html>
 
 <head>
-    <title>RET Verhalen</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <title>Portofolio Robin</title>
+    <meta charset="utf-8">
+    <link href="styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/png" href="images/demo/favicon.png" />
 </head>
 
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html"><img src="images/ret-logo.png" alt="RET logo"></a></li>
-            <li><a href="profiel.html"><img src="images/profiel.svg" alt="profielknop"></a></li>
-            <li><a href="favorieten.html"><img id="notificatie" src="images/favoriet-nav.svg" alt="favorietenknop"></a></li>
-            <li>
-                <div><input type="search" placeholder="Waar zoek je naar?"><img src="images/zoeken.svg" alt="zoekknop"></div>
-            </li>
-        </ul>
-    </nav>
+<body id="top">
 
-    <header>
-        <h1>100 reisverhalen voor onderweg!</h1>
-        <button>Laat me jouw verrassen!<img src="images/pijl.svg" alt="verasknop"></button>
-    </header>
 
-    <main>
-        <button id="showformulier"><img src="images/sorteericoon%20.svg" alt="">Filter- en Sorteeropties
-        </button>
-        <button id="hideformulier"><img src="images/sorteericoon%20.svg" alt="">Filter- en Sorteeropties
-        </button>
-        <div id="formulier">
-            <form action="#">
-                <h2>Filter- en Sorteeropties</h2>
 
-                <div>
-                    <button>Sorteren op:</button>
-                    <div>
-                        <a href="#">Meest bekeken</a>
-                        <a href="#">Hoogste reviews</a>
-                        <a href="#">Lengte lang-kort</a>
-                        <a href="#">Lengte kort-lang</a>
-                        <a href="#">Alfabetisch A-Z</a>
-                        <a href="#">Alfabetisch Z-A</a>
-                    </div>
+
+
+
+
+
+    <div class="bgded overlay" style="background-image:url('images/demo/achtergrond.png');">
+
+        <div class="wrapper row1">
+            <header id="header" class="hoc clear">
+                <div id="logo" class="fl_left">
+                    <h1><a href="index.html"><img src="images/demo/logo.png" alt=""></a></h1>
                 </div>
-
-                <fieldset>
-                    <label for="slider1">Maximale leesduur:</label>
-                    <div>
-                        <p>1min.</p>
-                        <input type="range" min="1" max="60" value="50" class="slider" id="slider1">
-                        <p>60min.</p>
-                    </div>
-                    <p>leesduur: <span id="nummer"></span></p>
-                </fieldset>
-
-                <fieldset>
-                    <label for="slider2">Leesbaarheid:</label>
-                    <div>
-                        <p>Makkelijk</p>
-                        <input type="range" min="1" max="60" value="50" class="slider" id="slider2">
-                        <p>Moeilijk</p>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <span><label>Sfeer:</label></span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer1">
-                        <label for="sfeer1">Liefdevol</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer2">
-                        <label for="sfeer2">Kwaadheid</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer3">
-                        <label for="sfeer3">Rustig</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer4">
-                        <label for="sfeer4">Onrustig</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer5">
-                        <label for="sfeer5">Spannend</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer6">
-                        <label for="sfeer6">Angst</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer7">
-                        <label for="sfeer7">Verdriet</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer8">
-                        <label for="sfeer8">Grimmig</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer9">
-                        <label for="sfeer9">Ontspannen</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer10">
-                        <label for="sfeer10">Plezierig</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer11">
-                        <label for="sfeer11">Feestelijk</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="sfeer12">
-                        <label for="sfeer12">Irritatie</label>
-                    </span>
-                </fieldset>
-
-                <fieldset>
-                    <span><label>Kleuren:</label></span>
-                    <span><input type="checkbox" name="#" value="#" id="kleur1">
-                        <label for="kleur1">Zwart/wit</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="kleur2">
-                        <label for="kleur2">Kleurrijk</label>
-                    </span>
-                    <span><input type="checkbox" name="#" value="#" id="kleur3">
-                        <label for="kleur3">Één dominante kleur</label>
-                    </span>
-
-                </fieldset>
-
-                <button>Filteren!</button>
-
-            </form>
+                <nav id="mainav" class="fl_right">
+                    <ul class="clear">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="portofolio.html">Portfolio</a></li>
+                        <li><a href="overmij.html">Over mij</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-        <article>
-            <a href="verhaal1.html"><img src="images/verhalen/1-Notitie-procesmatig.png" alt="verhaal"></a>
-            <h3>1: Notitie</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> kleurrijk</label>
-                <label><b>Sfeer:</b> Procesmatig</label>
-                <label><b>Leesbaarheid:</b> 7/10</label>
-                <label><b>Maximale leesduur:</b> 8 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
+
+
+
+
+
+
+
+
+
+
+        <div id="pageintro" class="hoc clear">
+            <div class="flexslider basicslider">
+
+                <ul class="slides">
+                    <li>
+                        <article>
+                            <p>Quote:</p>
+                            <h3 class="heading">"Ik ben creatief"</h3>
+                            <p>Ik houd ervan om lekker creatief bezig te zijn, om mezelf helemaal los te laten in wat ik doe.</p>
+                            <footer><a class="btn" href="ontwerpgeschiedenis.html">Voorbeeld van mijn creativiteit</a></footer>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <p>Quote:</p>
+                            <h3 class="heading">"Ik ben een perfectionist"</h3>
+                            <p>Het liefst wil ik dat alles perfect is, dat alles volgens plan gaat, en dat het er uit ziet zoals ik had gedacht.</p>
+                            <footer><a class="btn" href="pj1.html">Voorbeeld van mijn perfectionisme</a></footer>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <p>Quote:</p>
+                            <h3 class="heading">"Ik ben een leider"</h3>
+                            <p>Ik vind het fijn als ik de leiding heb, zodat ik weet dat alles gebeurd volgens plan.</p>
+                            <footer><a class="btn" href="npd.html">Voorbeeld van mijn leiderschap</a></footer>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <p>Quote:</p>
+                            <h3 class="heading">"Ik ben een harde werker"</h3>
+                            <p>Ik heb gekozen voor deze studie omdat ik het leuk vind wat ik doe, ik werk daarom keihard om te laten zien wat ik kan.</p>
+                            <footer><a class="btn" href="mi.html">Voorbeeld van mijn harde werk</a></footer>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <p>Quote:</p>
+                            <h3 class="heading">"Illustrator is mijn favoriete programma"</h3>
+                            <p>Het meeste werk doe ik via Illustrator, het is een fijn programma om mee te werken.</p>
+                            <footer><a class="btn" href="vid.html">Voorbeeld van mijn Illustrator skills</a></footer>
+                        </article>
+                    </li>
+
                 </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal6.html"><img src="images/verhalen/6-hardboiled-grimmig.png" alt="verhaal"></a>
-            <h3>6: Hardboiled</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Geel, wit, zwart</label>
-                <label><b>Sfeer:</b> Grimmig</label>
-                <label><b>Leesbaarheid:</b> 6/10</label>
-                <label><b>Maximale leesduur:</b> 10 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img onclick="deNotificatie()" src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal16.html"><img src="images/verhalen/16-eric-lucassen-aggressief.png" alt="verhaal"></a>
-            <h3>16: Eric Lucassen</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b>Agressief</label>
-                <label><b>Leesbaarheid:</b>3/10</label>
-                <label><b>Maximale leesduur:</b> 5 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal19.html"><img src="images/verhalen/19-vrije-versvorm-grimmig.png" alt="verhaal"></a>
-            <h3>19: Vrije versvorm</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b> Grimmig</label>
-                <label><b>Leesbaarheid:</b> 8/10</label>
-                <label><b>Maximale leesduur:</b> 2 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal19.html"><img src="images/verhalen/19-vrije-versvorm-zoekend.png" alt="verhaal"></a>
-            <h3>19: Vrije versvorm</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Kleurrijk</label>
-                <label><b>Sfeer:</b> Zoekend</label>
-                <label><b>Leesbaarheid:</b> 5/10</label>
-                <label><b>Maximale leesduur:</b> 2 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal20.html"><img src="images/verhalen/20-Litt%C3%A9rature-d%C3%A9finitionnelle-verwarring.png" alt="verhaal"></a>
-            <h3>20: Littérature définitionnelle</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b> Verwarring</label>
-                <label><b>Leesbaarheid:</b> 4/10</label>
-                <label><b>Maximale leesduur:</b> 12 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal25.html"><img src="images/verhalen/25-Lepra-lijdensweg.png" alt="verhaal"></a>
-            <h3>25: Lepra</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b> Lijdensweg</label>
-                <label><b>Leesbaarheid:</b> 3/10</label>
-                <label><b>Maximale leesduur:</b> 6 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal25.html"><img src="images/verhalen/25-kinderlied-gespleten.png" alt="verhaal"></a>
-            <h3>25: Kinderlied</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Kleurrijk</label>
-                <label><b>Sfeer:</b> Gespleten</label>
-                <label><b>Leesbaarheid:</b> 5/10</label>
-                <label><b>Maximale leesduur:</b> 2 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal26.html"><img src="images/verhalen/26-nichterig-SFEER.png" alt="verhaal"></a>
-            <h3>26: Nichterig</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b> ???</label>
-                <label><b>Leesbaarheid:</b> 4/10</label>
-                <label><b>Maximale leesduur:</b> 7 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal28.html"><img src="images/verhalen/28-Alzheimer-SFEER.png" alt="verhaal"></a>
-            <h3>28: Alzheimer</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/grijs</label>
-                <label><b>Sfeer:</b> Ontbrekend</label>
-                <label><b>Leesbaarheid:</b> 6/10</label>
-                <label><b>Maximale leesduur:</b> 5 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal47.html"><img src="images/verhalen/47-haiku-SFEER-_2_.png" alt="verhaal"></a>
-            <h3>47: Haiku</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Kleurrijk</label>
-                <label><b>Sfeer:</b> ???</label>
-                <label><b>Leesbaarheid:</b> 5/10</label>
-                <label><b>Maximale leesduur:</b> 8 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal47.html"><img src="images/verhalen/47-Haiku-SFEER.png" alt="verhaalverhaal"></a>
-            <h3>47: Haiku</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b> ???</label>
-                <label><b>Leesbaarheid:</b> 10/10</label>
-                <label><b>Maximale leesduur:</b> 1 minuut</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal49.html"><img src="images/verhalen/49-ollebolleke.png" alt="verhaalverhaal"></a>
-            <h3>49: Ollebolleke</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Rood, wit, zwart</label>
-                <label><b>Sfeer:</b> ???</label>
-                <label><b>Leesbaarheid:</b> 9/10</label>
-                <label><b>Maximale leesduur:</b> 2 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal55.html"><img src="images/verhalen/55-van-vader-tot-zoon-wisselend.png" alt="verhaal"></a>
-            <h3>55: Van vader tot zoon</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b> Wisselend</label>
-                <label><b>Leesbaarheid:</b> 4/10</label>
-                <label><b>Maximale leesduur:</b> 3 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal57.html"><img src="images/verhalen/57-paranoia-anxiety.png" alt="verhaal"></a>
-            <h3>57: Paranoia</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b> Anxiety</label>
-                <label><b>Leesbaarheid:</b> 4/10</label>
-                <label><b>Maximale leesduur:</b> 6 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal57.html"><img src="images/verhalen/57-paranoia-gehaast.png" alt="verhaal"></a>
-            <h3>57: Paranoia</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Rood, wit, zwart</label>
-                <label><b>Sfeer:</b> Gehaast</label>
-                <label><b>Leesbaarheid:</b> 2/10</label>
-                <label><b>Maximale leesduur:</b> 10 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal83.html"><img src="images/verhalen/83-De-Cock-en-het-raadsel-van-het-verdwenen-boek-SFEER.png" alt="verhaal"></a>
-            <h3>83: De Cock en het raadsel van het verdwenen boek</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b> ???</label>
-                <label><b>Leesbaarheid:</b> 6/10</label>
-                <label><b>Maximale leesduur:</b> 9 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img id="reactieveranderen" onclick="veranderReageer()" src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal87.html"><img src="images/verhalen/87-code-geirriteerd.png" alt="verhaal"></a>
-            <h3>87: Code</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Zwart/wit</label>
-                <label><b>Sfeer:</b> Geïrriteerd</label>
-                <label><b>Leesbaarheid:</b> 7/10</label>
-                <label><b>Maximale leesduur:</b> 15 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="downloads.html"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img id="favorieten" src="images/favoriet.svg" onclick="veranderHartje()" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img id="reageerknop" src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal89.html"><img src="images/verhalen/89-zombie-grimmig.png" alt="verhaal"></a>
-            <h3>89: Zombie</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Rood, wit, zwart</label>
-                <label><b>Sfeer:</b> Grimmig</label>
-                <label><b>Leesbaarheid:</b> 6/10</label>
-                <label><b>Maximale leesduur:</b> 9 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal93.html"><img src="images/verhalen/93-Nico-Dijkshoorn-die-mart-smeets-imiteert-onrustig.png" alt="verhaal"></a>
-            <h3>93: Nico Dijkshoorn die Mart Smeets imiteert</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> kleurrijk</label>
-                <label><b>Sfeer:</b> Onrustig</label>
-                <label><b>Leesbaarheid:</b> 7/10</label>
-                <label><b>Maximale leesduur:</b> 6 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <article>
-            <a href="verhaal99.html"><img src="images/verhalen/99-Verrassing-vreemd.png" alt="verhaal"></a>
-            <h3>99: Verrassing</h3>
-            <span>
-                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
-                <label><b>Kleur:</b> Blauw/rood</label>
-                <label><b>Sfeer:</b> Vreemd</label>
-                <label><b>Leesbaarheid:</b> 7/10</label>
-                <label><b>Maximale leesduur:</b> 11 minuten</label>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/downloaden.svg" alt="downloadknop"></a></li>
-                    <li><a href="#"><img src="images/favoriet.svg" alt="favorietenknop"></a></li>
-                    <li><a href="#"><img src="images/reactie.svg" alt="reactieknop"></a></li>
-                </ul>
-            </nav>
-        </article>
-    </main>
-
-    <footer><h4>Bronnen gebruikt:</h4><br>
-        <p><img src="images/pijl-blauw.svg" alt="">Reactie achter laten popup, bron:
-        <a href="https://www.w3schools.com/howto/howto_css_modals.asp">
-            https://www.w3schools.com/howto/howto_css_modals.asp</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
-        <img src="images/pijl-blauw.svg" alt="">Filter- en sorteeropties in- en uitklapbaar, bron:
-        <a href="https://www.youtube.com/watch?v=sxZhsBLg2Ls">
-            https://www.youtube.com/watch?v=sxZhsBLg2Ls</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
-        <img src="images/pijl-blauw.svg" alt="">Slider, bron:
-        <a href="https://www.w3schools.com/howto/howto_js_rangeslider.asp">
-            https://www.w3schools.com/howto/howto_js_rangeslider.asp</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
-        <img src="images/pijl-blauw.svg" alt="">Veranderen van hartje, bron:
-        <a href="https://stackoverflow.com/questions/34102091/changing-images-src-with-event-onclick">
-            https://stackoverflow.com/questions/34102091/changing-images-src-with-event-onclick</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
-        <img src="images/pijl-blauw.svg" alt="">Niet scrolbare website na klikken van link, bron:
-        <a href="https://stackoverflow.com/questions/1601933/how-do-i-stop-a-web-page-from-scrolling-to-the-top-when-a-link-is-clicked-that-t">
-            https://stackoverflow.com/questions/1601933/how-do-i-stop-a-web-page-from-scrolling-to-the-top-when-a-link-is-clicked-that-t</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
-        <img src="images/pijl-blauw.svg" alt="">Dropdownknop, bron:
-        <a href="https://www.w3schools.com/css/css_dropdowns.asp">
-            https://www.w3schools.com/css/css_dropdowns.asp</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
-        <img src="images/pijl-blauw.svg" alt="">RET-Logo en Bannerafbeelding, bron:
-        <a href="https://www.ret.nl/">
-            https://www.ret.nl/</a><img src="images/pijl-rood-schuin.svg" alt=""><br>
-        <img src="images/pijl-blauw.svg" alt="">Under construction foto, bron:
-        <a href="https://www.thesignmaker.co.nz/product/work-in-progress-sign">
-            https://www.thesignmaker.co.nz/product/work-in-progress-sign</a><img src="images/pijl-rood-schuin.svg" alt="">
-        </p>
-    </footer>
-
-    <div id="mijnPopup" class="popup">
-        <div class="popup-content">
-            <div class="popup-header">
-                <span class="sluiten">&times;</span>
-                <h3>Reactie achterlaten over verhaal 87: 'Code' van Molovich.
-                </h3>
-            </div>
-            <div class="popup-body">
-                <p>Aantal sterren:</p>
-                <img id="rating1" onclick="veranderSter1()" src="images/ster1.svg" alt="ster">
-                <img id="rating2" onclick="veranderSter2()" src="images/ster2.svg" alt="ster">
-                <img id="rating3" onclick="veranderSter3()" src="images/ster3.svg" alt="ster">
-                <img id="rating4" onclick="veranderSter4()" src="images/ster4.svg" alt="ster">
-                <img id="rating5" onclick="veranderSter5()" src="images/ster5.svg" alt="ster">
-                <p>Wat vond je van het verhaal?</p>
-                <textarea placeholder="Typ hier je tekst..." name="wat je er van vond" rows="4" cols="50"></textarea>
-            </div>
-            <div class="popup-footer">
-                <button class="versturen">Reactie plaatsen!<img src="images/pijl.svg" alt="plaatsenknop"></button>
             </div>
         </div>
+
     </div>
 
-    <script src="javascript/jquery.js"></script>
-    <script src="javascript/script.js"></script>
+
+
+
+
+
+
+
+
+
+    <div class="wrapper row3">
+        <section class="hoc container clear">
+            <div class="btmspace-80 center">
+                <h3 class="nospace">Op deze website:</h3>
+                <p class="nospace">Enkele dingen die je kunt vinden op deze website.</p>
+            </div>
+
+            <div class="group">
+                <article class="one_third first"><a href="portofolio.html"><img class="btmspace-30" src="images/demo/adobe%20programmas.png" alt="" style = "height: 150px; width: 320px; margin-top: 25px; margin-bottom: 30px;"></a>
+                    <h6 class="nospace font-x1">Adobe Programma's</h6>
+                    <p>Ik laat 3 vakken zien waarbij ik de Adobe programma's optimaal heb gebruikt.</p>
+                </article>
+
+                <article class="one_third"><a href="portofolio.html"><img class="btmspace-30" src="images/demo/onderzoek%20doen.jpg" alt=""></a>
+                    <h6 class="nospace font-x1">Onderzoek doen</h6>
+                    <p>Ik laat 3 vakken zien waarbij we onderzoek naar iets moesten doen en wat daarbij het proces was.</p>
+                </article>
+
+                <article class="one_third"><a href="portofolio.html"><img class="btmspace-30" src="images/demo/overig.jpg" alt=""></a>
+                    <h6 class="nospace font-x1">Overig</h6>
+                    <p>Ik laat 3 overige vakken zien die ik ook heel leuk vond dit jaar.</p>
+                </article>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="btmspace-80 center">
+                <h3 class="nospace">Mijn favoriete muziek:</h3>
+                <p class="nospace">Als je niks meer te lezen hebt op mijn website kan je altijd nog even luisteren naar mijn favoriete liedjes.</p>
+            </div>
+            <div>
+                <iframe src="https://open.spotify.com/embed/user/robinansems00/playlist/3UN2DR8U03fgSX8B1Cs1Dr" width="1000" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="wrapper row4 bgded overlay" style="background-image:url('images/demo/achtergrond2.png');">
+        <footer id="footer" class="hoc clear">
+
+            <div class="one_third first">
+                <h3 class="heading">Robin Ansems</h3>
+                <ul class="faico clear">
+                    <li><a class="faicon-facebook" href="https://www.facebook.com/robin.ansems?ref=bookmarks"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="faicon-twitter" href="https://twitter.com/robinansems"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="faicon-google-plus" href="https://plus.google.com/u/0/101327692611223460065"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a class="faicon-youtube" href="https://www.youtube.com/channel/UCI7GyHU7g_9Og87uy0h4FnQ?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
+                    <li><a class="faicon-instagram" href="https://www.instagram.com/robinansems/"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="one_third">
+                <ul class="nospace meta">
+                    <li class="btmspace-15"><i class="fa fa-phone"></i> 06-18540319</li>
+                    <li><i class="fa fa-envelope-o"></i> robinansems00@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="one_third">
+                <form method="post" action="#">
+                    <fieldset>
+                        <legend>Stuur mij een email:</legend>
+                        <div class="clear">
+                            <a href="mailto:robinansems00@gmail.com"><input type="text" value="" placeholder="Typ hier...">
+                            <button class="fa fa-share"  title="Verstuur"></button></a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+
+
+
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.flexslider-min.js"></script>
 </body>
 </html>
