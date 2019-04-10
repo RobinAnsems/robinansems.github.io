@@ -2,7 +2,7 @@
 
 /* Hier wordt er een achtergrondafbeelding geplaats die de hele breedte aanneemt, en er wordt een lettertype gegeven. */
 body {
-    background-image: url("../images/demo/cmd1/programmeren2/achtergrond.png");
+    background-image: url("../images/demo/CMD1/programmeren2/achtergrond.png");
     background-size: cover;
     font-family: serif;
 }
