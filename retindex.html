@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!--FED HTML Robin Ansems studentnummer:500780651 RET Website-->
+<html lang="nl">
+
+<head>
+    <title>RET Verhalen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/retstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="shortcut icon" href="images/demo/CMD2/pjweb/retwebsite/favicon.png" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="retindex.html"><img src="images/demo/CMD2/pjweb/retwebsite/ret-logo.png" alt="RET logo"></a></li>
+            <li><a href="retprofiel.html"><img src="images/demo/CMD2/pjweb/retwebsite/profiel.svg" alt="profielknop"></a></li>
+            <li><a href="retfavorieten.html"><img id="notificatie" src="images/demo/CMD2/pjweb/retwebsite/favoriet-nav.svg" alt="favorietenknop"></a></li>
+            <li>
+                <div><input type="search" placeholder="Waar zoek je naar?"><img src="images/demo/CMD2/pjweb/retwebsite/zoeken.svg" alt="zoekknop"></div>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>100 reisverhalen voor onderweg!</h1>
+        <button>Laat me jouw verrassen!<img src="images/demo/CMD2/pjweb/retwebsite/pijl.svg" alt="verasknop"></button>
+    </header>
+
+    <main>
+        <button id="showformulier"><img src="images/demo/CMD2/pjweb/retwebsite/sorteericoon%20.svg" alt="">Filter- en Sorteeropties
+        </button>
+        <button id="hideformulier"><img src="images/demo/CMD2/pjweb/retwebsite/sorteericoon%20.svg" alt="">Filter- en Sorteeropties
+        </button>
+        <div id="formulier">
+            <form action="#">
+                <h2>Filter- en Sorteeropties</h2>
+
+                <div>
+                    <button>Sorteren op:</button>
+                    <div>
+                        <a href="#">Meest bekeken</a>
+                        <a href="#">Hoogste reviews</a>
+                        <a href="#">Lengte lang-kort</a>
+                        <a href="#">Lengte kort-lang</a>
+                        <a href="#">Alfabetisch A-Z</a>
+                        <a href="#">Alfabetisch Z-A</a>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <label for="slider1">Maximale leesduur:</label>
+                    <div>
+                        <p>1min.</p>
+                        <input type="range" min="1" max="60" value="50" class="slider" id="slider1">
+                        <p>60min.</p>
+                    </div>
+                    <p>leesduur: <span id="nummer"></span></p>
+                </fieldset>
+
+                <fieldset>
+                    <label for="slider2">Leesbaarheid:</label>
+                    <div>
+                        <p>Makkelijk</p>
+                        <input type="range" min="1" max="60" value="50" class="slider" id="slider2">
+                        <p>Moeilijk</p>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <span><label>Sfeer:</label></span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer1">
+                        <label for="sfeer1">Liefdevol</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer2">
+                        <label for="sfeer2">Kwaadheid</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer3">
+                        <label for="sfeer3">Rustig</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer4">
+                        <label for="sfeer4">Onrustig</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer5">
+                        <label for="sfeer5">Spannend</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer6">
+                        <label for="sfeer6">Angst</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer7">
+                        <label for="sfeer7">Verdriet</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer8">
+                        <label for="sfeer8">Grimmig</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer9">
+                        <label for="sfeer9">Ontspannen</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer10">
+                        <label for="sfeer10">Plezierig</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer11">
+                        <label for="sfeer11">Feestelijk</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="sfeer12">
+                        <label for="sfeer12">Irritatie</label>
+                    </span>
+                </fieldset>
+
+                <fieldset>
+                    <span><label>Kleuren:</label></span>
+                    <span><input type="checkbox" name="#" value="#" id="kleur1">
+                        <label for="kleur1">Zwart/wit</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="kleur2">
+                        <label for="kleur2">Kleurrijk</label>
+                    </span>
+                    <span><input type="checkbox" name="#" value="#" id="kleur3">
+                        <label for="kleur3">Één dominante kleur</label>
+                    </span>
+
+                </fieldset>
+
+                <button>Filteren!</button>
+
+            </form>
+        </div>
+        <article>
+            <a href="verhaal1.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/1-Notitie-procesmatig.png" alt="verhaal"></a>
+            <h3>1: Notitie</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> kleurrijk</label>
+                <label><b>Sfeer:</b> Procesmatig</label>
+                <label><b>Leesbaarheid:</b> 7/10</label>
+                <label><b>Maximale leesduur:</b> 8 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal6.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/6-hardboiled-grimmig.png" alt="verhaal"></a>
+            <h3>6: Hardboiled</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Geel, wit, zwart</label>
+                <label><b>Sfeer:</b> Grimmig</label>
+                <label><b>Leesbaarheid:</b> 6/10</label>
+                <label><b>Maximale leesduur:</b> 10 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img onclick="deNotificatie()" src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal16.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/16-eric-lucassen-aggressief.png" alt="verhaal"></a>
+            <h3>16: Eric Lucassen</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b>Agressief</label>
+                <label><b>Leesbaarheid:</b>3/10</label>
+                <label><b>Maximale leesduur:</b> 5 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal19.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/19-vrije-versvorm-grimmig.png" alt="verhaal"></a>
+            <h3>19: Vrije versvorm</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b> Grimmig</label>
+                <label><b>Leesbaarheid:</b> 8/10</label>
+                <label><b>Maximale leesduur:</b> 2 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal19.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/19-vrije-versvorm-zoekend.png" alt="verhaal"></a>
+            <h3>19: Vrije versvorm</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Kleurrijk</label>
+                <label><b>Sfeer:</b> Zoekend</label>
+                <label><b>Leesbaarheid:</b> 5/10</label>
+                <label><b>Maximale leesduur:</b> 2 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal20.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/20-Litt%C3%A9rature-d%C3%A9finitionnelle-verwarring.png" alt="verhaal"></a>
+            <h3>20: Littérature définitionnelle</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b> Verwarring</label>
+                <label><b>Leesbaarheid:</b> 4/10</label>
+                <label><b>Maximale leesduur:</b> 12 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal25.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/25-Lepra-lijdensweg.png" alt="verhaal"></a>
+            <h3>25: Lepra</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b> Lijdensweg</label>
+                <label><b>Leesbaarheid:</b> 3/10</label>
+                <label><b>Maximale leesduur:</b> 6 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal25.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/25-kinderlied-gespleten.png" alt="verhaal"></a>
+            <h3>25: Kinderlied</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Kleurrijk</label>
+                <label><b>Sfeer:</b> Gespleten</label>
+                <label><b>Leesbaarheid:</b> 5/10</label>
+                <label><b>Maximale leesduur:</b> 2 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal26.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/26-nichterig-SFEER.png" alt="verhaal"></a>
+            <h3>26: Nichterig</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b> ???</label>
+                <label><b>Leesbaarheid:</b> 4/10</label>
+                <label><b>Maximale leesduur:</b> 7 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal28.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/28-Alzheimer-SFEER.png" alt="verhaal"></a>
+            <h3>28: Alzheimer</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/grijs</label>
+                <label><b>Sfeer:</b> Ontbrekend</label>
+                <label><b>Leesbaarheid:</b> 6/10</label>
+                <label><b>Maximale leesduur:</b> 5 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal47.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/47-haiku-SFEER-_2_.png" alt="verhaal"></a>
+            <h3>47: Haiku</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Kleurrijk</label>
+                <label><b>Sfeer:</b> ???</label>
+                <label><b>Leesbaarheid:</b> 5/10</label>
+                <label><b>Maximale leesduur:</b> 8 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal47.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/47-Haiku-SFEER.png" alt="verhaalverhaal"></a>
+            <h3>47: Haiku</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b> ???</label>
+                <label><b>Leesbaarheid:</b> 10/10</label>
+                <label><b>Maximale leesduur:</b> 1 minuut</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal49.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/49-ollebolleke.png" alt="verhaalverhaal"></a>
+            <h3>49: Ollebolleke</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Rood, wit, zwart</label>
+                <label><b>Sfeer:</b> ???</label>
+                <label><b>Leesbaarheid:</b> 9/10</label>
+                <label><b>Maximale leesduur:</b> 2 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal55.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/55-van-vader-tot-zoon-wisselend.png" alt="verhaal"></a>
+            <h3>55: Van vader tot zoon</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b> Wisselend</label>
+                <label><b>Leesbaarheid:</b> 4/10</label>
+                <label><b>Maximale leesduur:</b> 3 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal57.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/57-paranoia-anxiety.png" alt="verhaal"></a>
+            <h3>57: Paranoia</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b> Anxiety</label>
+                <label><b>Leesbaarheid:</b> 4/10</label>
+                <label><b>Maximale leesduur:</b> 6 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite//reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal57.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/57-paranoia-gehaast.png" alt="verhaal"></a>
+            <h3>57: Paranoia</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Rood, wit, zwart</label>
+                <label><b>Sfeer:</b> Gehaast</label>
+                <label><b>Leesbaarheid:</b> 2/10</label>
+                <label><b>Maximale leesduur:</b> 10 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal83.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/83-De-Cock-en-het-raadsel-van-het-verdwenen-boek-SFEER.png" alt="verhaal"></a>
+            <h3>83: De Cock en het raadsel van het verdwenen boek</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b> ???</label>
+                <label><b>Leesbaarheid:</b> 6/10</label>
+                <label><b>Maximale leesduur:</b> 9 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img id="reactieveranderen" onclick="veranderReageer()" src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="retverhaal87.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/87-code-geirriteerd.png" alt="verhaal"></a>
+            <h3>87: Code</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Zwart/wit</label>
+                <label><b>Sfeer:</b> Geïrriteerd</label>
+                <label><b>Leesbaarheid:</b> 7/10</label>
+                <label><b>Maximale leesduur:</b> 15 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="downloads.html"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img id="favorieten" src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" onclick="veranderHartje()" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img id="reageerknop" src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal89.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/89-zombie-grimmig.png" alt="verhaal"></a>
+            <h3>89: Zombie</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Rood, wit, zwart</label>
+                <label><b>Sfeer:</b> Grimmig</label>
+                <label><b>Leesbaarheid:</b> 6/10</label>
+                <label><b>Maximale leesduur:</b> 9 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal93.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/93-Nico-Dijkshoorn-die-mart-smeets-imiteert-onrustig.png" alt="verhaal"></a>
+            <h3>93: Nico Dijkshoorn die Mart Smeets imiteert</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> kleurrijk</label>
+                <label><b>Sfeer:</b> Onrustig</label>
+                <label><b>Leesbaarheid:</b> 7/10</label>
+                <label><b>Maximale leesduur:</b> 6 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article>
+            <a href="verhaal99.html"><img src="images/demo/CMD2/pjweb/retwebsite/verhalen/99-Verrassing-vreemd.png" alt="verhaal"></a>
+            <h3>99: Verrassing</h3>
+            <span>
+                <label><b>Korte beschrijving:</b> Het verhaal gaat over een man die naar de bus gaat. Lees meer...</label>
+                <label><b>Kleur:</b> Blauw/rood</label>
+                <label><b>Sfeer:</b> Vreemd</label>
+                <label><b>Leesbaarheid:</b> 7/10</label>
+                <label><b>Maximale leesduur:</b> 11 minuten</label>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/downloaden.svg" alt="downloadknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/favoriet.svg" alt="favorietenknop"></a></li>
+                    <li><a href="#"><img src="images/demo/CMD2/pjweb/retwebsite/reactie.svg" alt="reactieknop"></a></li>
+                </ul>
+            </nav>
+        </article>
+    </main>
+
+    <footer>
+        <h4>Bronnen gebruikt:</h4><br>
+        <p><img src="images/demo/CMD2/pjweb/retwebsite/pijl-blauw.svg" alt="">Reactie achter laten popup, bron:
+            <a href="https://www.w3schools.com/howto/howto_css_modals.asp">
+                https://www.w3schools.com/howto/howto_css_modals.asp</a><img src="images/demo/CMD2/pjweb/retwebsite/pijl-rood-schuin.svg" alt=""><br>
+            <img src="images/demo/CMD2/pjweb/retwebsite/pijl-blauw.svg" alt="">Filter- en sorteeropties in- en uitklapbaar, bron:
+            <a href="https://www.youtube.com/watch?v=sxZhsBLg2Ls">
+                https://www.youtube.com/watch?v=sxZhsBLg2Ls</a><img src="images/demo/CMD2/pjweb/retwebsite/pijl-rood-schuin.svg" alt=""><br>
+            <img src="images/demo/CMD2/pjweb/retwebsite/pijl-blauw.svg" alt="">Slider, bron:
+            <a href="https://www.w3schools.com/howto/howto_js_rangeslider.asp">
+                https://www.w3schools.com/howto/howto_js_rangeslider.asp</a><img src="images/demo/CMD2/pjweb/retwebsite/pijl-rood-schuin.svg" alt=""><br>
+            <img src="images/demo/CMD2/pjweb/retwebsite/pijl-blauw.svg" alt="">Veranderen van hartje, bron:
+            <a href="https://stackoverflow.com/questions/34102091/changing-images-src-with-event-onclick">
+                https://stackoverflow.com/questions/34102091/changing-images-src-with-event-onclick</a><img src="images/demo/CMD2/pjweb/retwebsite/pijl-rood-schuin.svg" alt=""><br>
+            <img src="images/demo/CMD2/pjweb/retwebsite/pijl-blauw.svg" alt="">Niet scrolbare website na klikken van link, bron:
+            <a href="https://stackoverflow.com/questions/1601933/how-do-i-stop-a-web-page-from-scrolling-to-the-top-when-a-link-is-clicked-that-t">
+                https://stackoverflow.com/questions/1601933/how-do-i-stop-a-web-page-from-scrolling-to-the-top-when-a-link-is-clicked-that-t</a><img src="images/demo/CMD2/pjweb/retwebsite/pijl-rood-schuin.svg" alt=""><br>
+            <img src="images/demo/CMD2/pjweb/retwebsite/pijl-blauw.svg" alt="">Dropdownknop, bron:
+            <a href="https://www.w3schools.com/css/css_dropdowns.asp">
+                https://www.w3schools.com/css/css_dropdowns.asp</a><img src="images/demo/CMD2/pjweb/retwebsite/pijl-rood-schuin.svg" alt=""><br>
+            <img src="images/demo/CMD2/pjweb/retwebsite/pijl-blauw.svg" alt="">RET-Logo en Bannerafbeelding, bron:
+            <a href="https://www.ret.nl/">
+                https://www.ret.nl/</a><img src="images/demo/CMD2/pjweb/retwebsite/pijl-rood-schuin.svg" alt=""><br>
+            <img src="images/demo/CMD2/pjweb/retwebsite/pijl-blauw.svg" alt="">Under construction foto, bron:
+            <a href="https://www.thesignmaker.co.nz/product/work-in-progress-sign">
+                https://www.thesignmaker.co.nz/product/work-in-progress-sign</a><img src="images/demo/CMD2/pjweb/retwebsite/pijl-rood-schuin.svg" alt="">
+        </p>
+    </footer>
+
+    <div id="mijnPopup" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span class="sluiten">&times;</span>
+                <h3>Reactie achterlaten over verhaal 87: 'Code' van Molovich.
+                </h3>
+            </div>
+            <div class="popup-body">
+                <p>Aantal sterren:</p>
+                <img id="rating1" onclick="veranderSter1()" src="images/demo/CMD2/pjweb/retwebsite/ster1.svg" alt="ster">
+                <img id="rating2" onclick="veranderSter2()" src="images/demo/CMD2/pjweb/retwebsite/ster2.svg" alt="ster">
+                <img id="rating3" onclick="veranderSter3()" src="images/demo/CMD2/pjweb/retwebsite/ster3.svg" alt="ster">
+                <img id="rating4" onclick="veranderSter4()" src="images/demo/CMD2/pjweb/retwebsite/ster4.svg" alt="ster">
+                <img id="rating5" onclick="veranderSter5()" src="images/demo/CMD2/pjweb/retwebsite/ster5.svg" alt="ster">
+                <p>Wat vond je van het verhaal?</p>
+                <textarea placeholder="Typ hier je tekst..." name="wat je er van vond" rows="4" cols="50"></textarea>
+            </div>
+            <div class="popup-footer">
+                <button class="versturen">Reactie plaatsen!<img src="images/demo/CMD2/pjweb/retwebsite/pijl.svg" alt="plaatsenknop"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/retjquery.js"></script>
+    <script src="scripts/retscript.js"></script>
+</body>
+</html>

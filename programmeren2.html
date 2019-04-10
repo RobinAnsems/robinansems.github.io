@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eindopdracht Inleiding Programmeren Robin Ansems</title>
+    <link rel="stylesheet" href="styles/drumstelstyles.css">
+
+</head>
+
+<body>
+    <!-- Afbeelding van het drumstel. -->
+    <img src="images/demo/cmd1/programmeren2/drumstel.png" alt="drumstel" class="drumstel">
+
+    <!-- Afbeelding van het klappen. -->
+    <img src="images/demo/cmd1/programmeren2/Klappen.png" alt="klappen" class="klappen">
+
+    <!-- Afbeelding van de bel. -->
+    <img src="images/demo/cmd1/programmeren2/bel.png" alt="bel" class="bel">
+
+    <!-- Afbeelding van de koebel. -->
+    <img src="images/demo/cmd1/programmeren2/koebel.png" alt="koebel" class="koebel">
+
+    <!-- Afbeelding van de toeter. -->
+    <img src="images/demo/cmd1/programmeren2/toeter.png" alt="toeter" class="toeter">
+
+    <!-- Metadata linksbovenin het scherm. -->
+    <div class="metadata">
+        <h1>Naam: Robin Ansems<br>Studentnummer: 500780651<br>Klas: Cyaan<br>Datum: 11 juni 2018<br>Docent: Walter Giannuzzi</h1>
+    </div>
+
+     <!-- Titel rechtsbovenin het scherm. -->
+    <div class="titel">
+        <h1>Drumstel</h1>
+    </div>
+
+    <!-- Dit zijn de knoppen op het drumstel, ik gebruik divjes om daar een een data key aan te koppelen.
+    De datakey laat het nummer van de knop zien op het toetsenbord. Elke toets op je toetsenbord heeft een
+    eigen nummer, en met datakey weet javascript precies wat er moet gebeuren als er op een bepaalde knop wordt gedrukt. -->
+
+    <div class="knop a" data-key="65">A</div>
+    <div class="knop s" data-key="83">S</div>
+    <div class="knop d" data-key="68">D</div>
+    <div class="knop f" data-key="70">F</div>
+    <div class="knop g" data-key="71">G</div>
+    <div class="knop h" data-key="72">H</div>
+    <div class="knop j" data-key="74">J</div>
+    <div class="knop k" data-key="75">K</div>
+    <div class="knop b" data-key="66">B</div>
+    <div class="knop v" data-key="86">V</div>
+    <div class="knop c" data-key="67">C</div>
+    <div class="knop x" data-key="88">X</div>
+
+    <!-- Dit zijn de geluidjes van het drumstel. -->
+    <audio id="65"><source src="https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/hihat.wav"></audio>
+    <audio id="83"><source src="https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/ride.wav"></audio>
+    <audio id="68"><source src="https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/kick.wav"></audio>
+    <audio id="70"><source src="https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/snare.wav"></audio>
+    <audio id="71"><source src="https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/tom.wav"></audio>
+    <audio id="75"><source src="https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/openhat.wav"></audio>
+    <audio id="74"><source src="sfx/Electronic-Tom-2.wav"></audio>
+    <audio id="72"><source src="sfx/Electro-Tom.wav"></audio>
+    <audio id="66"><source src="https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/clap.wav"></audio>
+    <audio id="86"><source src="sfx/Alesis-Fusion-Tubular-Bells-C6.wav"></audio>
+    <audio id="67"><source src="sfx/Korg-N1R-Cowbell.wav"></audio>
+    <audio id="88"><source src="sfx/ss13_clown_horn.wav"></audio>
+
+    <!-- De gelinkte Javascript. -->
+    <script src="scripts/drumsteljavascript.js"></script>
+</body>
+
+</html>

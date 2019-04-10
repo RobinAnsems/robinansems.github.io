@@ -1,0 +1,244 @@
+/* Er staat een warning in de CSSLint, deze kan ik niet voorkomen omdat bij het bepalen van de border van de knoppen er een misverstand ontstaat omdat de height 32px is, wat eigenlijk niet zo is, want de border zelf is aan beide kanten 3px en dat zorgt ervoor dat objecten groter lijken dan ze in werkelijkheid zijn. met de code: box-sizing: border-box;, kan dit voorkomen worden zodat alle maten bij elkaar worden samengevoegd, maar deze code is niet meer geldig in IE6 en IE7. */
+
+/* Hier wordt er een achtergrondafbeelding geplaats die de hele breedte aanneemt, en er wordt een lettertype gegeven. */
+body {
+    background-image: url("../images/demo/cmd1/programmeren2/achtergrond.png");
+    background-size: cover;
+    font-family: serif;
+}
+
+/* Hier wordt het drumstel op zijn plaats gezet. */
+.drumstel {
+    display: block;
+    height: 600px;
+    margin: auto;
+    margin-top: 350px;
+}
+
+/* Hier wordt het klappen op zijn plaats gezet. */
+.klappen {
+    height: 150px;
+    position: absolute;
+    right: 300px;
+    top: 750px;
+}
+
+/* Hier wordt de bel op zijn plaats gezet. */
+.bel {
+    height: 150px;
+    position: absolute;
+    right: 300px;
+    top: 525px;
+}
+
+/* Hier wordt de koebel op zijn plaats gezet. */
+.koebel {
+    height: 175px;
+    position: absolute;
+    right: 1500px;
+    top: 725px;
+}
+
+/* Hier wordt de toeter op zijn plaats gezet. */
+.toeter {
+    height: 175px;
+    position: absolute;
+    right: 1500px;
+    top: 525px;
+}
+
+/* Hier wordt de metadata op zijn plaats gezet. */
+.metadata {
+    color: darkgrey;
+    font-family: monospace;
+    font-size: 0.6em;
+    left: 30px;
+    position: absolute;
+    top: 5px;
+}
+
+/* Hier wordt de titel op zijn plaats gezet. */
+.titel {
+    color: darkgrey;
+    font-family: monospace;
+    font-size: 2em;
+    position: absolute;
+    right: 30px;
+    top: 5px;
+}
+
+/* Hier wordt aan de hand van afstanden tot de rand de knoppen precies op hun plaats gezet, en de vormgeving van de knop zelf wordt gedaan. */
+.a {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 1220px;
+    text-align: center;
+    top: 550px;
+    width: 32px;
+}
+
+.s {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 1130px;
+    text-align: center;
+    top: 445px;
+    width: 32px;
+}
+
+.d {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 910px;
+    text-align: center;
+    top: 700px;
+    width: 32px;
+}
+
+.f {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 1085px;
+    text-align: center;
+    top: 600px;
+    width: 32px;
+}
+
+.g {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 985px;
+    text-align: center;
+    top: 490px;
+    width: 32px;
+}
+
+.h {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 830px;
+    text-align: center;
+    top: 495px;
+    width: 32px;
+}
+
+.j {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 680px;
+    text-align: center;
+    top: 650px;
+    width: 32px;
+}
+
+.k {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 667px;
+    text-align: center;
+    top: 470px;
+    width: 32px;
+}
+
+.b {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 360px;
+    text-align: center;
+    top: 850px;
+    width: 32px;
+}
+
+.v {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 360px;
+    text-align: center;
+    top: 580px;
+    width: 32px;
+}
+
+.c {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 1525px;
+    text-align: center;
+    top: 825px;
+    width: 32px;
+}
+
+.x {
+    background: MidnightBlue;
+    border: 3px solid black;
+    border-radius: 2px;
+    color: gray;
+    font-size: 1.6em;
+    height: 32px;
+    position: absolute;
+    right: 1525px;
+    text-align: center;
+    top: 610px;
+    width: 32px;
+}
+
+/* Dit is de vormgeving van hoe de knoppen eruit als hij is ingedrukt */
+.drummen {
+    border-color: white;
+    color: white;
+    transform: scale(1.5);
+}
