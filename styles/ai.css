@@ -120,6 +120,24 @@
     font-family: serif;
 }
 
+#pagina4 {
+    background: url("../images/demo/CMD3/ai/achtergrond4.png") no-repeat;
+    background-size: cover;
+    font-family: serif;
+}
+
+#pagina5 {
+    background: url("../images/demo/CMD3/ai/achtergrond5.png") no-repeat;
+    background-size: cover;
+    font-family: serif;
+}
+
+#pagina6 {
+    background: url("../images/demo/CMD3/ai/achtergrond6.png") no-repeat;
+    background-size: cover;
+    font-family: serif;
+}
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #button1 {
@@ -278,6 +296,26 @@
 
 #button8:checked + #button8x {
     background: url("../images/demo/CMD3/ai/neem%20op2.png") no-repeat;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button9 {
+    display: none;
+}
+
+#button9x {
+    width: 296px;
+    height: 296px;
+    position: absolute;
+    right: 810px;
+    bottom: 384px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/komeraan.png") no-repeat;
+}
+
+#button9:checked + #button9x {
+    background: url("../images/demo/CMD3/ai/komeraan2.png") no-repeat;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
