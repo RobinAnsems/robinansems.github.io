@@ -1,0 +1,283 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nextpage1 {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#lastpage1 {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+#nextpage2 {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#lastpage2 {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+#nextpage3 {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#subscriptionKey {
+    position: absolute;
+    right: 100px;
+    top: 400px;
+}
+
+#serviceRegion {
+    position: absolute;
+    right: 100px;
+    top: 400px;
+}
+
+#phraseDiv {
+    position: absolute;
+    right: 73px;
+    top: 299px;
+    width: 520px;
+    height: 416px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.button {
+    width: 600px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/knop%20(3).png") no-repeat;
+    border-style: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+.button:hover {
+    width: 600px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    background: url("../images/demo/CMD3/ai/knop%20(2).png") no-repeat;
+    border-style: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.button:active {
+    width: 600px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    background: url("../images/demo/CMD3/ai/knop%20(1).png") no-repeat;
+    border-style: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+#pagina1 {
+    background: url("../images/demo/CMD3/ai/achtergrond.png") no-repeat;
+    background-size: cover;
+    font-family: serif;
+}
+
+#pagina2 {
+    background: url("../images/demo/CMD3/ai/achtergrond2.png") no-repeat;
+    background-size: cover;
+    font-family: serif;
+}
+
+#pagina3 {
+    background: url("../images/demo/CMD3/ai/achtergrond3.png") no-repeat;
+    background-size: cover;
+    font-family: serif;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button1 {
+    display: none;
+}
+
+#button1x {
+    width: 236px;
+    height: 236px;
+    position: absolute;
+    right: 1601px;
+    bottom: 435px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/linda1.png") no-repeat;
+}
+
+#button1:checked + #button1x {
+    background: url("../images/demo/CMD3/ai/linda2.png") no-repeat;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button2 {
+    display: none;
+}
+
+#button2x {
+    width: 236px;
+    height: 236px;
+    position: absolute;
+    right: 1309px;
+    bottom: 435px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/mama1.png") no-repeat;
+}
+
+#button2:checked + #button2x {
+    background: url("../images/demo/CMD3/ai/mama2.png") no-repeat;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button3 {
+    display: none;
+}
+
+#button3x {
+    width: 236px;
+    height: 236px;
+    position: absolute;
+    right: 1016px;
+    bottom: 435px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/papa1.png") no-repeat;
+}
+
+#button3:checked + #button3x {
+    background: url("../images/demo/CMD3/ai/papa2.png") no-repeat;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button4 {
+    display: none;
+}
+
+#button4x {
+    width: 236px;
+    height: 236px;
+    position: absolute;
+    right: 1601px;
+    bottom: 85px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/eten.png") no-repeat;
+}
+
+#button4:checked + #button4x {
+    background: url("../images/demo/CMD3/ai/eten2.png") no-repeat;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button5 {
+    display: none;
+}
+
+#button5x {
+    width: 236px;
+    height: 236px;
+    position: absolute;
+    right: 1309px;
+    bottom: 85px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/vraagje.png") no-repeat;
+}
+
+#button5:checked + #button5x {
+    background: url("../images/demo/CMD3/ai/vraagje2.png") no-repeat;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button6 {
+    display: none;
+}
+
+#button6x {
+    width: 236px;
+    height: 236px;
+    position: absolute;
+    right: 1016px;
+    bottom: 85px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/dringend.png") no-repeat;
+}
+
+#button6:checked + #button6x {
+    background: url("../images/demo/CMD3/ai/dringend2.png") no-repeat;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button7 {
+    display: none;
+}
+
+#button7x {
+    width: 236px;
+    height: 236px;
+    position: absolute;
+    right: 724px;
+    bottom: 85px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/overig.png") no-repeat;
+}
+
+#button7:checked + #button7x {
+    background: url("../images/demo/CMD3/ai/overig2.png") no-repeat;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button8 {
+    display: none;
+}
+
+#button8x {
+    width: 236px;
+    height: 236px;
+    position: absolute;
+    right: 655px;
+    bottom: 435px;
+    cursor: pointer;
+    background: url("../images/demo/CMD3/ai/neem%20op.png") no-repeat;
+}
+
+#button8:checked + #button8x {
+    background: url("../images/demo/CMD3/ai/neem%20op2.png") no-repeat;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

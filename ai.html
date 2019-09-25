@@ -6,9 +6,186 @@
     <meta charset="utf-8">
     <link href="styles/ai.css" rel="stylesheet" type="text/css" media="all">
     <link rel="shortcut icon" type="image/png" href="images/demo/favicon.png" />
+
+
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_Ngk3cSj1ZJZkQD1I5mU4C");
+        })();
+    </script>
+
+
 </head>
 
-<body id="top">
+<body id="pagina1">
+
+
+
+
+    <form id="myform" method="post">
+
+        <input type="checkbox" id="button1" name="Email van:" value="Linda Ansems" /><label for="button1" id="button1x"></label>
+        <input type="checkbox" id="button2" name="Email van:" value="Ellen Beckering" /><label for="button2" id="button2x"></label>
+        <input type="checkbox" id="button3" name="Email van:" value="Eric Ansems" /><label for="button3" id="button3x"></label>
+
+        <input type="checkbox" id="button4" name="Onderwerp:" value="Eten" /><label for="button4" id="button4x"></label>
+        <input type="checkbox" id="button5" name="Onderwerp:" value="Vraagje" /><label for="button5" id="button5x"></label>
+        <input type="checkbox" id="button6" name="Onderwerp:" value="Dringend" /><label for="button6" id="button6x"></label>
+        <input type="checkbox" id="button7" name="Onderwerp:" value="Overig" /><label for="button7" id="button7x"></label>
+
+        <div id="content">
+            <input id="subscriptionKey" type="text" size="40" value="20ea5a8d661045759998347a92f941ad">
+            <input id="serviceRegion" type="text" size="40" value="westus">
+            <button id="startRecognizeOnceAsyncButton"><input type="checkbox" id="button8" /><label for="button8" id="button8x"></label></button>
+            <textarea id="phraseDiv" name="Bericht:"></textarea>
+        </div>
+
+
+
+
+        <a href="ai2.html"><button class="button"><a href="ai2.html"></a></button></a>
+
+    </form>
+
+
+
+
+
+    <button id="nextpage1">
+        <a href="ai2.html">volgende</a>
+    </button>
+
+
+
+
+
+
+
+    <!--
+<div id="formulier">
+ <form id="myform" method="post">
+        <label>Email van:</label>
+        <input type="text" name="Email van:" />
+        <label>Onderwerp:</label>
+        <input type="text" name="Onderwerp:" />
+        <label>Bericht:</label>
+        <input type="text" name="Bericht:" />
+        <br><br>
+        <button>
+            Verzenden
+        </button>
+    </form>
+</div>
+-->
+
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_Ngk3cSj1ZJZkQD1I5mU4C");
+        })();
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <script src="microsoft.cognitiveservices.speech.sdk.bundle.js"></script>
+    <script>
+        var phraseDiv;
+        var startRecognizeOnceAsyncButton;
+        var subscriptionKey, serviceRegion;
+        var authorizationToken;
+        var SpeechSDK;
+        var recognizer;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            startRecognizeOnceAsyncButton = document.getElementById("startRecognizeOnceAsyncButton");
+            subscriptionKey = document.getElementById("subscriptionKey");
+            serviceRegion = document.getElementById("serviceRegion");
+            phraseDiv = document.getElementById("phraseDiv");
+
+            startRecognizeOnceAsyncButton.addEventListener("click", function() {
+                startRecognizeOnceAsyncButton.disabled = true;
+                phraseDiv.innerHTML = "";
+
+                var speechConfig;
+                if (authorizationToken) {
+                    speechConfig = SpeechSDK.SpeechConfig.fromAuthorizationToken(authorizationToken, serviceRegion.value);
+                } else {
+                    if (subscriptionKey.value === "" || subscriptionKey.value === "subscription") {
+                        alert("Please enter your Microsoft Cognitive Services Speech subscription key!");
+                        return;
+                    }
+                    speechConfig = SpeechSDK.SpeechConfig.fromSubscription(subscriptionKey.value, serviceRegion.value);
+                }
+
+                speechConfig.speechRecognitionLanguage = "en-US";
+                var audioConfig = SpeechSDK.AudioConfig.fromDefaultMicrophoneInput();
+                recognizer = new SpeechSDK.SpeechRecognizer(speechConfig, audioConfig);
+
+                recognizer.recognizeOnceAsync(
+                    function(result) {
+                        startRecognizeOnceAsyncButton.disabled = false;
+                        phraseDiv.innerHTML += result.text;
+                        window.console.log(result);
+
+                        recognizer.close();
+                        recognizer = undefined;
+                    },
+                    function(err) {
+                        startRecognizeOnceAsyncButton.disabled = false;
+                        phraseDiv.innerHTML += err;
+                        window.console.log(err);
+
+                        recognizer.close();
+                        recognizer = undefined;
+                    });
+            });
+
+            if (!!window.SpeechSDK) {
+                SpeechSDK = window.SpeechSDK;
+                startRecognizeOnceAsyncButton.disabled = false;
+
+                document.getElementById('content').style.display = 'block';
+                document.getElementById('warning').style.display = 'none';
+
+                if (typeof RequestAuthorizationToken === "function") {
+                    RequestAuthorizationToken();
+                }
+            }
+        });
+
+        var authorizationEndpoint = "token.php";
+
+        function RequestAuthorizationToken() {
+            if (authorizationEndpoint) {
+                var a = new XMLHttpRequest();
+                a.open("GET", authorizationEndpoint);
+                a.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                a.send("");
+                a.onload = function() {
+                    var token = JSON.parse(atob(this.responseText.split(".")[1]));
+                    serviceRegion.value = token.region;
+                    authorizationToken = this.responseText;
+                    subscriptionKey.disabled = true;
+                    subscriptionKey.value = "using authorization token (hit F5 to refresh)";
+                    console.log("Got an authorization token: " + token);
+                }
+            }
+        }
+    </script>
+
+
 
 
 
