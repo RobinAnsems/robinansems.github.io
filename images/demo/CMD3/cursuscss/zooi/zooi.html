@@ -1,0 +1,188 @@
+.voorkant {
+width: 30em;
+height: 10em;
+position: absolute;
+clip-path: polygon(0% 15%, 100% 4%, 100% 100%, 0% 90%);
+background: white;
+bottom: 4em;
+right: 20em;
+}
+
+.zijkant {
+width: 20em;
+height: 25em;
+position: absolute;
+clip-path: polygon(0% 61.5%, 35% 60%, 35% 3%, 100% 0%, 100% 100%, 0% 100%);
+background: gray;
+bottom: 4em;
+right: 0em;
+}
+
+.boven {
+width: 30em;
+height: 16.2em;
+position: absolute;
+clip-path: polygon(0% 27%, 100% 0%, 100% 100%, 0% 100%);
+background: lightgrey;
+bottom: 12em;
+right: 13em;
+}
+
+
+
+
+
+
+
+
+
+
+.luchtveranderenachtergrond {
+position: absolute;
+width: 100%;
+height: 70em;
+bottom: 0em;
+right: 0em;
+margin: 0;
+overflow: hidden;
+background-image: linear-gradient(#02276b 10%, #355f83 100%);
+overflow: hidden;
+}
+
+.luchtveranderenachtergrondgo {
+animation-name: luchtveranderenachtergrondkeyframe;
+animation-timing-function: ease-in;
+animation-duration: 3s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+animation-delay: 1.5s;
+/* ----------------------------------------------was 9 seconden (-5 sec) dus 5 erbij optellen----------------------------------*/
+}
+
+@keyframes luchtveranderenachtergrondkeyframe {
+0% {
+transform: translateY(0em);
+}
+
+
+100% {
+transform: translateY(70em);
+}
+}
+
+
+
+
+
+
+
+
+
+
+<div class="wolk 1">
+    <div class="rondje"></div>
+    <div class="rondje"></div>
+    <div class="rondje"></div>
+    <div class="vierkantje"></div>
+</div>
+
+
+
+
+
+.wolk div {
+background-color: white;
+}
+
+.wolk .rondje {
+border-radius: 50%;
+}
+
+.wolk div:nth-child(1) {
+position: absolute;
+height: 4em;
+width: 4em;
+left: 0em;
+bottom: 0em;
+}
+
+.wolk div:nth-child(2) {
+position: absolute;
+height: 5em;
+width: 5em;
+left: 5em;
+bottom: 0em;
+}
+
+.wolk div:nth-child(3) {
+position: absolute;
+height: 6em;
+width: 6em;
+left: 2em;
+bottom: 0em;
+}
+
+.wolk div:nth-child(4) {
+position: absolute;
+height: 0.5em;
+width: 6em;
+left: 2em;
+bottom: 0em;
+}
+
+
+
+
+
+
+
+
+.arm {
+    position: absolute;
+    left: 0em;
+    bottom: 0em;
+    transform-origin: 0.5em 0.5em;
+    background-color: greenyellow;
+}
+
+.arm.links {
+    width: 1.5em;
+    height: 4em;
+    bottom: 3em;
+    left: -1em;
+    border-radius: 1em 1em 1em 1em;
+    transform: rotate(15deg);
+}
+
+.arm.rechts {
+    width: 1.5em;
+    height: 4em;
+    bottom: 3em;
+    left: 4em;
+    border-radius: 1em 1em 1em 1em;
+    transform: rotate(-30deg);
+
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.armgo {
+    animation-name: armkeyframe;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 0s;
+}
+
+@keyframes armkeyframe {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(-60deg);
+    }
+}

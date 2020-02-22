@@ -1,0 +1,1910 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    /*    background-image: linear-gradient(#02276b 10em, #355f83 90em);*/
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*----------------------------------tekst rechtsbovenin-----------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.kopje {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    position: absolute;
+    right: 1em;
+    top: 0em;
+    font-size: 10px;
+}
+
+.kopjego {
+    animation-name: kopjekeyframe;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+}
+
+@keyframes kopjekeyframe {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*--------------------------------------groen gras----------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.grond {
+    width: 100%;
+    height: 5em;
+    background-color: #166308;
+    position: absolute;
+    bottom: 0em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*---------------------------bruin platform waar de raket op staat------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.berg {
+    bottom: 5em;
+    position: absolute;
+    border-bottom: 5em solid #7e5941;
+    border-left: 20em solid transparent;
+    border-right: 20em solid transparent;
+    height: 0em;
+    right: 35em;
+    width: 45em;
+}
+
+.ondergrond1 {
+    position: absolute;
+    bottom: 9.25em;
+    right: 55em;
+    width: 45em;
+    height: 0.75em;
+    background-color: #5b3e2f;
+}
+
+.ondergrond2 {
+    position: absolute;
+    bottom: 9.25em;
+    right: 99em;
+    width: 1em;
+    border-bottom: 0.75em solid #5b3e2f;
+    border-left: 3em solid transparent;
+}
+
+.ondergrond3 {
+    position: absolute;
+    bottom: 9.25em;
+    right: 52em;
+    width: 1em;
+    border-bottom: 0.75em solid #5b3e2f;
+    border-right: 3em solid transparent;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*---------------------------gebouw rechtsonderin-----------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.gebouw {
+    transform: perspective(10em) rotateY();
+}
+
+.voorkant {
+    width: 80em;
+    height: 20em;
+    position: absolute;
+    background: repeating-linear-gradient(to right, #828282, #828282 10px, #bcbbbb 10px, #bcbbbb 100px);
+    border: solid black;
+    border-width: 0.5em 0.5em 0.2em 1em;
+    bottom: 1.5em;
+    right: 19.3em;
+    transform-origin: right 70%;
+    transform: perspective(50em) rotateY(-45deg);
+}
+
+.logo {
+    width: 70em;
+    position: absolute;
+    bottom: 7.5em;
+    right: 2em;
+}
+
+.zijkant {
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    background: repeating-linear-gradient(to right, #828282, #828282 0.1em, #5e5d5d 0.1em, #bcbbbb 0.75em);
+    border: solid black;
+    border-width: 0.4em 0em 0.2em 0.5em;
+    bottom: 1.5em;
+    right: -11em;
+
+    transform-origin: left 70%;
+    transform: perspective(200em) rotateY(45deg);
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*---------------------------launch-knop op het gebouw rechtsonderin----------------------*/
+/*----------------------------------------------------------------------------------------*/
+.knopje {
+    position: absolute;
+    right: 4em;
+    bottom: 5em;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 15px 11px 0px 0px black;
+}
+
+.button:hover {
+    background-color: red
+}
+
+.button:active {
+    background-color: red;
+    box-shadow: 5px 5px black;
+    transform: translateY(4px);
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*---------------------------toren links naast de raket-----------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.basis {
+    position: absolute;
+    width: 4em;
+    height: 22em;
+    bottom: 9.7em;
+    right: 85em;
+    background: repeating-linear-gradient(to right, #828282, #828282 1px, #bcbbbb 1px, #bcbbbb 10px);
+    border: solid black;
+    border-width: 0.1em;
+}
+
+.basiszijkant {
+    position: absolute;
+    width: 2em;
+    height: 22em;
+    bottom: 9.7em;
+    right: 89.1em;
+    background: repeating-linear-gradient(to right, #828282, #828282 1px, #8d8b8b 1px, #8d8b8b 10px);
+    border: solid black;
+    border-width: 0.1em;
+    transform-origin: right 50%;
+    transform: perspective(50em) rotateY(-45deg);
+}
+
+.mast {
+    position: absolute;
+    width: 0.6em;
+    height: 8em;
+    bottom: 31em;
+    right: 87.3em;
+    background-color: white;
+    border: solid black;
+    border-width: 0.1em 0.1em 0em 0.1em;
+}
+
+.vlag {
+    width: 3em;
+    position: absolute;
+    bottom: 29em;
+    right: 85.6em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*---------------------------watertoren rechts naast de raket-----------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.watertorenkoepel {
+    position: absolute;
+    bottom: 20em;
+    right: 55em;
+    background-color: white;
+    display: inline-block;
+    width: 3.5em;
+    height: 3em;
+    border-radius: 50%/30%;
+    -webkit-box-shadow: inset 10px 0px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 10px 0px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset -10px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.watertorenstok1 {
+    position: absolute;
+    width: 0.7em;
+    height: 11em;
+    bottom: 10em;
+    right: 56.3em;
+    background-color: white;
+}
+
+.watertorenstok2 {
+    position: absolute;
+    width: 0.2em;
+    height: 12em;
+    bottom: 9.9em;
+    right: 59em;
+    background-color: white;
+    transform: rotate(10deg);
+}
+
+.watertorenstok3 {
+    position: absolute;
+    width: 0.2em;
+    height: 11.7em;
+    bottom: 9.5em;
+    right: 54.2em;
+    background-color: white;
+    transform: rotate(-10deg);
+}
+
+.watertorenstok4 {
+    position: absolute;
+    width: 0.2em;
+    height: 12em;
+    bottom: 9.9em;
+    right: 58.5em;
+    background-color: white;
+    transform: rotate(10deg);
+}
+
+.watertorenstok5 {
+    position: absolute;
+    width: 0.2em;
+    height: 11.5em;
+    bottom: 9.6em;
+    right: 54.7em;
+    background-color: white;
+    transform: rotate(-10deg);
+}
+
+.spacex {
+    width: 3em;
+    position: absolute;
+    bottom: 21.5em;
+    right: 55.2em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*---------------------------raket die opstijgt genaamd falconheavy-----------------------*/
+/*----------------------------------------------------------------------------------------*/
+.buis1 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0em;
+    height: 14.75em;
+    width: 1.5em;
+    background-color: white;
+    box-shadow: inset 1em 0em 1em -1em black;
+}
+
+.buis2 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 1.7em;
+    height: 21em;
+    width: 1.5em;
+    background-color: white;
+    box-shadow: inset 1em 0em 1em -1em black;
+}
+
+.buis3 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 3.4em;
+    height: 14.75em;
+    width: 1.5em;
+    background-color: white;
+    box-shadow: inset 1em 0em 1em -1em black;
+}
+
+.onderstel1 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0em;
+    height: 3.75em;
+    width: 1.5em;
+    background-color: black;
+    clip-path: polygon(0 100%, 0 15%, 9% 5%, 25% 0, 50% 90%, 75% 0, 91% 5%, 100% 15%, 100% 100%);
+}
+
+.onderstel2 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 1.7em;
+    height: 3.75em;
+    width: 1.5em;
+    background-color: black;
+    clip-path: polygon(0 100%, 0 15%, 9% 5%, 25% 0, 50% 90%, 75% 0, 91% 5%, 100% 15%, 100% 100%);
+}
+
+.onderstel3 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 3.4em;
+    height: 3.75em;
+    width: 1.5em;
+    background-color: black;
+    clip-path: polygon(0 100%, 0 15%, 9% 5%, 25% 0, 50% 90%, 75% 0, 91% 5%, 100% 15%, 100% 100%);
+}
+
+.balkonder {
+    position: absolute;
+    bottom: 0.7em;
+    left: 0em;
+    height: 0.2em;
+    width: 4.5em;
+    background-color: black;
+}
+
+.balkboven {
+    position: absolute;
+    bottom: 14.75em;
+    left: 0.75em;
+    height: 0.2em;
+    width: 3.4em;
+    background-color: lightgray;
+}
+
+.motor1 {
+    position: absolute;
+    bottom: 0em;
+    left: 0em;
+    height: 0.5em;
+    width: 1.5em;
+    background-color: grey;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.motor2 {
+    position: absolute;
+    bottom: 0em;
+    left: 1.7em;
+    height: 0.5em;
+    width: 1.5em;
+    background-color: grey;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.motor3 {
+    position: absolute;
+    bottom: 0em;
+    left: 3.4em;
+    height: 0.5em;
+    width: 1.5em;
+    background-color: grey;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.buisbalk1 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.7em;
+    height: 14.75em;
+    width: 0.10em;
+    background-color: black;
+}
+
+.buisbalk2 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 2.4em;
+    height: 14.75em;
+    width: 0.10em;
+    background-color: black;
+}
+
+.buisbalk3 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 4.09em;
+    height: 14.75em;
+    width: 0.10em;
+    background-color: black;
+}
+
+.koepel1 {
+    position: absolute;
+    bottom: 13.2em;
+    left: 0em;
+    height: 3.5em;
+    width: 1.5em;
+    background-color: white;
+    clip-path: ellipse(50% 50% at 50% 50%);
+    box-shadow: inset 1em 0em 1em -1em black;
+}
+
+.koepel2 {
+    position: absolute;
+    bottom: 100%;
+    left: 0em;
+    height: 2em;
+    width: 100%;
+    background-color: white;
+    box-shadow: inset 1em 0em 1em -1em black;
+    border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%
+}
+
+.koepel3 {
+    position: absolute;
+    bottom: 13.2em;
+    left: 3.4em;
+    height: 3.5em;
+    width: 1.5em;
+    background-color: white;
+    clip-path: ellipse(50% 50% at 50% 50%);
+    box-shadow: inset 1em 0em 1em -1em black;
+}
+
+.raketlogo {
+    position: absolute;
+    bottom: 5.5em;
+    left: 1.9em;
+    height: 8em;
+}
+
+.fhlogo {
+    position: absolute;
+    bottom: 16.5em;
+    left: 1.7em;
+    height: 1em;
+}
+
+.fhlogo2 {
+    position: absolute;
+    bottom: 22em;
+    left: 1.35em;
+    height: 1.5em;
+}
+
+.vlag2 {
+    width: 1em;
+    position: absolute;
+    bottom: 15.5em;
+    left: 1.95em;
+}
+
+.vierkant {
+    position: absolute;
+    bottom: 20.5em;
+    left: 1.3em;
+    height: 3em;
+    width: 2.25em;
+    background-color: white;
+    box-shadow: inset 1em 0em 1em -1em black;
+}
+
+.polygon {
+    position: absolute;
+    bottom: 20em;
+    left: 1.3em;
+    height: 0.5em;
+    width: 2.25em;
+    background-color: gainsboro;
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+    box-shadow: inset 1em 0em 1em -1em black;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.falconheavy {
+    position: absolute;
+    bottom: 10em;
+    right: 77.5em;
+}
+
+.falconheavygo {
+    animation-name: falconheavykeyframe;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes falconheavykeyframe {
+    0% {
+        bottom: 10em;
+    }
+
+    100% {
+        bottom: 20em;
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*---------------------------vuur-animatie die uit de raket komt--------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.vuur {
+    position: absolute;
+    bottom: 11em;
+    right: 79.5em;
+    opacity: 0;
+}
+
+.vuurgo {
+    animation-name: vuurkeyframe;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes vuurkeyframe {
+    0% {
+        bottom: 10em;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+        background-color: blue;
+    }
+
+    100% {
+        bottom: 20em;
+        opacity: 1;
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+.fire-wrapper {
+    height: 10em;
+    width: 10em;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.fire-element {
+    background-image: linear-gradient(to top, #f00, #ff0);
+    height: 50%;
+    width: 10%;
+    border-radius: 100% 0;
+    position: inherit;
+    left: 50%;
+    bottom: 0;
+    animation: 1.5s fire infinite;
+}
+
+.fire-element:nth-of-type(1) {
+    height: 100%;
+    left: 50%;
+    animation-delay: .1s;
+}
+
+.fire-element:nth-of-type(2) {
+    height: 90%;
+    left: 55%;
+    animation-delay: .2s;
+}
+
+.fire-element:nth-of-type(3) {
+    height: 80%;
+    left: 45%;
+    animation-delay: .3s;
+}
+
+.fire-element:nth-of-type(4) {
+    height: 70%;
+    left: 60%;
+    animation-delay: .4s;
+}
+
+.fire-element:nth-of-type(5) {
+    height: 60%;
+    left: 40%;
+    animation-delay: .5s;
+}
+
+.fire-element:nth-of-type(6) {
+    height: 50%;
+    left: 65%;
+    animation-delay: .6s;
+}
+
+.fire-element:nth-of-type(7) {
+    height: 40%;
+    left: 35%;
+    animation-delay: .7s;
+}
+
+.fire-element:nth-of-type(8) {
+    height: 30%;
+    left: 70%;
+    animation-delay: .8s;
+}
+
+.fire-element:nth-of-type(9) {
+    height: 20%;
+    left: 30%;
+    animation-delay: .9s;
+}
+
+.fire-element:nth-of-type(10) {
+    height: 10%;
+    left: 75%;
+    animation-delay: 1s;
+}
+
+.fire-element:nth-of-type(11) {
+    height: 60%;
+    left: 50%;
+    animation-delay: .1s;
+}
+
+.fire-element:nth-of-type(12) {
+    height: 50%;
+    left: 55%;
+    animation-delay: .2s;
+}
+
+.fire-element:nth-of-type(13) {
+    height: 40%;
+    left: 45%;
+    animation-delay: .3s;
+}
+
+.fire-element:nth-of-type(14) {
+    height: 30%;
+    left: 60%;
+    animation-delay: .4s;
+}
+
+.fire-element:nth-of-type(15) {
+    height: 20%;
+    left: 40%;
+    animation-delay: .5s;
+}
+
+.vuurcirkel {
+    position: absolute;
+    height: 1em;
+    width: 4.9em;
+    right: 2em;
+    bottom: 0;
+    border-radius: 75% 75% 10% 10%;
+    background-color: #f00;
+}
+
+
+@keyframes fire {
+    0% {
+        transform: scale(.8) rotate(-10deg);
+    }
+
+    10% {
+        transform: scale(1) rotateY(90deg);
+    }
+
+    20% {
+        transform: scale(1.2) rotate(0deg);
+    }
+
+    40% {
+        transform: scale(.8) rotate(10deg);
+    }
+
+    50% {
+        transform: scale(.6) rotateY(-90deg);
+    }
+
+    60% {
+        transform: scale(.8) rotate(-10deg);
+    }
+
+    70% {
+        transform: scale(.5) rotateY(60deg);
+    }
+
+    80% {
+        transform: scale(1.1) rotate(15deg);
+    }
+
+    100% {
+        transform: scale(.8) rotate(-10deg);
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*---------------------------rook-animatie als de raket opstijgt--------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.rook {
+    bottom: 10em;
+    right: 83em;
+    position: absolute;
+}
+
+.rookgo {
+    animation-name: rookkeyframe;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 6.5s;
+}
+
+@keyframes rookkeyframe {
+    0% {
+        transform: translateY(0em);
+    }
+
+    100% {
+        transform: translateY(200em);
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+.rook1 {
+    bottom: 0em;
+    left: 0em;
+    position: absolute;
+    width: 9em;
+    height: 5em;
+    background-color: white;
+    opacity: 0;
+    clip-path: polygon(10% 100%, 5% 89%, 3% 79%, 3% 69%, 6% 57%, 12% 51%, 16% 50%, 20% 50%, 24% 51%, 28% 55%, 31% 60%, 35% 66%, 41% 67%, 45% 66%, 53% 62%, 60% 57%, 69% 54%, 72% 53%, 79% 51%, 88% 55%, 92% 63%, 95% 71%, 96% 79%, 97% 85%, 93% 96%, 89% 97%, 81% 99%);
+}
+
+.rook1go {
+    animation-name: rook1keyframe;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes rook1keyframe {
+    0% {
+        transform: scale(50%) translateX(-0.25em);
+        filter: blur(0px);
+        opacity: 0.6;
+    }
+
+    25% {
+        transform: scale(120%) translateX(0em);
+
+    }
+
+    50% {
+        transform: scale(120%) translateX(0.25em);
+
+    }
+
+    75% {
+        transform: scale(130%) translateX(0em);
+
+    }
+
+    100% {
+        transform: scale(130%) translateX(-0.25em);
+        filter: blur(15px);
+        opacity: 0.1;
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+.rook2 {
+    bottom: 0em;
+    left: 3.5em;
+    position: absolute;
+    width: 9em;
+    height: 7em;
+    background-color: white;
+    opacity: 0;
+    clip-path: polygon(11% 100%, 6% 87%, 3% 78%, 2% 70%, 5% 61%, 8% 55%, 13% 42%, 17% 38%, 22% 40%, 23% 43%, 27% 43%, 40% 36%, 45% 36%, 50% 38%, 52% 45%, 58% 49%, 62% 46%, 69% 45%, 77% 50%, 81% 53%, 86% 59%, 91% 62%, 93% 65%, 94% 74%, 96% 83%, 97% 90%, 95% 96%, 92% 98%, 84% 99%, 76% 100%, 63% 100%);
+}
+
+.rook2go {
+    animation-name: rook2keyframe;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes rook2keyframe {
+    0% {
+        transform: scale(50%) translateX(-0.25em);
+        filter: blur(0px);
+        opacity: 0.6;
+    }
+
+    25% {
+        transform: scale(100%) translateX(0em);
+
+    }
+
+    50% {
+        transform: scale(110%) translateX(-0.25em);
+
+    }
+
+    75% {
+        transform: scale(120%) translateX(0em);
+
+    }
+
+    100% {
+        transform: scale(130%) translateX(-0.25em);
+        filter: blur(15px);
+        opacity: 0.1;
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+.rook3 {
+    bottom: 0em;
+    left: 7em;
+    position: absolute;
+    width: 9em;
+    height: 6em;
+    background-color: white;
+    opacity: 0;
+    clip-path: polygon(2% 100%, 0% 90%, 0% 88%, 0% 75%, 1% 71%, 5% 64%, 7% 61%, 9% 59%, 14% 55%, 18% 53%, 23% 55%, 26% 56%, 28% 59%, 30% 62%, 33% 64%, 34% 65%, 36% 65%, 41% 65%, 45% 64%, 53% 64%, 59% 60%, 63% 58%, 70% 56%, 81% 56%, 85% 58%, 89% 63%, 92% 66%, 95% 73%, 96% 79%, 97% 88%, 97% 93%, 95% 96%, 91% 98%, 86% 99%, 77% 100%, 72% 100%, 56% 100%);
+}
+
+.rook3go {
+    animation-name: rook3keyframe;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes rook3keyframe {
+    0% {
+        transform: scale(50%) translateX(0.25em);
+        filter: blur(0px);
+        opacity: 0.6;
+    }
+
+    25% {
+        transform: scale(120%) translateX(0em);
+
+    }
+
+    50% {
+        transform: scale(120%) translateX(-0.25em);
+
+    }
+
+    75% {
+        transform: scale(130%) translateX(0em);
+
+    }
+
+    100% {
+        transform: scale(140%) translateX(0.25em);
+        filter: blur(15px);
+        opacity: 0.1;
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*-----------------------aftel-sequence voordat de raket opstijgt-------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.nummer1 {
+    margin: 0;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: red;
+    position: absolute;
+    right: 5em;
+    top: 0em;
+    font-size: 100px;
+    opacity: 0;
+}
+
+.nummer2 {
+    margin: 0;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: red;
+    position: absolute;
+    right: 5em;
+    top: 0em;
+    font-size: 100px;
+    opacity: 0;
+}
+
+.nummer3 {
+    margin: 0;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: red;
+    position: absolute;
+    right: 5em;
+    top: 0em;
+    font-size: 100px;
+    opacity: 0;
+}
+
+.nummer4 {
+    margin: 0;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: red;
+    position: absolute;
+    right: 5em;
+    top: 0em;
+    font-size: 100px;
+    opacity: 0;
+}
+
+.nummer5 {
+    margin: 0;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: red;
+    position: absolute;
+    right: 5em;
+    top: 0em;
+    font-size: 100px;
+    opacity: 0;
+}
+
+.liftoff {
+    margin: 0;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: red;
+    position: absolute;
+    right: 1.5em;
+    top: 0em;
+    font-size: 100px;
+    opacity: 0;
+}
+
+.nummer1go {
+    animation-name: nummerkeyframe;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+.nummer2go {
+    animation-name: nummerkeyframe;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+.nummer3go {
+    animation-name: nummerkeyframe;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.nummer4go {
+    animation-name: nummerkeyframe;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.nummer5go {
+    animation-name: nummerkeyframe;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.liftoffgo {
+    animation-name: nummerkeyframe;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes nummerkeyframe {
+    0% {
+        transform: scale(0%);
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(100%);
+        opacity: 0;
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*----animatie dat de grond naar beneden verdwijnt en de kleur van de lucht veranderd-----*/
+/*----------------------------------------------------------------------------------------*/
+.grondweg {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.grondweggo {
+    animation-name: grondwegkeyframe;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 6.5s;
+}
+
+@keyframes grondwegkeyframe {
+    0% {
+        transform: translateY(0em);
+    }
+
+    100% {
+        transform: translateY(200em);
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+.luchtveranderen {
+    position: absolute;
+    width: 100%;
+    height: 210em;
+    bottom: 0em;
+    right: 0em;
+    margin: 0;
+    background-image: linear-gradient(#000000 0%, #000022 10%, #02276b 50%, #355f83 100%);
+    overflow: hidden;
+}
+
+.luchtveranderengo {
+    animation-name: luchtveranderenkeyframe;
+    animation-timing-function: ease-in-out;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 6.5s;
+}
+
+@keyframes luchtveranderenkeyframe {
+    0% {
+        transform: translateY(0em);
+    }
+
+    100% {
+        transform: translateY(145em);
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*--------------wolken-animatie die voorbij komen als de raket opstijgt-------------------*/
+/*----------------------------------------------------------------------------------------*/
+.wolken {
+    position: absolute;
+    bottom: 70em;
+    right: 100em;
+}
+
+.wolkengo {
+    animation-name: wolkenkeyframe;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+    /*9s;*/
+}
+
+@keyframes wolkenkeyframe {
+    0% {
+        transform: translateY(0em);
+    }
+
+    100% {
+        transform: translateY(200em);
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+.wolk div {
+    background-color: white;
+}
+
+.wolk .rondje {
+    border-radius: 50%;
+}
+
+.wolk div:nth-child(1) {
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    left: 0em;
+    bottom: 0em;
+}
+
+.wolk div:nth-child(2) {
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    left: 5em;
+    bottom: 0em;
+}
+
+.wolk div:nth-child(3) {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    left: 2em;
+    bottom: 0em;
+}
+
+.wolk div:nth-child(4) {
+    position: absolute;
+    height: 0.5em;
+    width: 6em;
+    left: 2em;
+    bottom: 0em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.wolk.een {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0em;
+    left: 0em;
+    height: 10em;
+    width: 10em;
+}
+
+.wolk.twee {
+    overflow: hidden;
+    position: absolute;
+    bottom: 10em;
+    left: 60em;
+    height: 10em;
+    width: 10em;
+}
+
+.wolk.drie {
+    overflow: hidden;
+    position: absolute;
+    bottom: 100em;
+    left: 60em;
+    height: 10em;
+    width: 10em;
+}
+
+.wolk.vier {
+    overflow: hidden;
+    position: absolute;
+    bottom: 120em;
+    left: 40em;
+    height: 10em;
+    width: 10em;
+}
+
+.wolk.vijf {
+    overflow: hidden;
+    position: absolute;
+    bottom: 110em;
+    left: 0em;
+    height: 10em;
+    width: 10em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*---------------------------------mars-animatie------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.mars {
+    position: absolute;
+    right: 0em;
+    bottom: 90em;
+
+    /*
+    right: 35em;
+    bottom: 45em;
+*/
+}
+
+.mars1 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #C25447;
+    box-shadow: inset -1em -1em #b34538;
+    height: 20em;
+    width: 20em;
+}
+
+.mars2 {
+    position: absolute;
+    background-color: #ae4033;
+    border-radius: 100%;
+    left: 3em;
+    top: 5em;
+    height: 3em;
+    width: 3em;
+}
+
+.mars3 {
+    position: absolute;
+    background-color: #ae4033;
+    border-radius: 100%;
+    left: 8em;
+    top: 10em;
+    height: 5em;
+    width: 5em;
+}
+
+.marstext {
+    position: absolute;
+    top: 10em;
+    left: 2.5em;
+    color: #ae4033;
+    font-size: 30px;
+}
+
+.marsgo {
+    animation-name: marskeyframe;
+    animation-timing-function: ease-out;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 13s;
+}
+
+@keyframes marskeyframe {
+    0% {
+        transform: translateY(0em) translateX(0em);
+    }
+
+    100% {
+        transform: translateY(45em) translateX(-35em);
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*--------------------------------alien-animatie------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.alien {
+    position: absolute;
+    right: 30em;
+    bottom: 35em;
+    transform-origin: 5em 5em;
+    opacity: 0;
+}
+
+.aliengo {
+    animation-name: alienkeyframe;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 19s;
+}
+
+@keyframes alienkeyframe {
+    0% {
+        transform: scale(75%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+
+.alienhoofd {
+    position: absolute;
+    bottom: 4em;
+    left: 2.5em;
+}
+
+.alienrondje1 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: greenyellow;
+    bottom: 6em;
+    left: 0em;
+    width: 5em;
+    height: 5em;
+}
+
+.alienrondje2 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: greenyellow;
+    bottom: 1em;
+    left: 0em;
+    width: 5em;
+    height: 5em;
+}
+
+.alienvierkantje1 {
+    position: absolute;
+    background-color: greenyellow;
+    bottom: 3.5em;
+    left: 0em;
+    width: 5em;
+    height: 5em;
+}
+
+.alienrondje3 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: green;
+    bottom: 5.75em;
+    left: 0.25em;
+    width: 5em;
+    height: 5em;
+}
+
+.alienrondje4 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: green;
+    bottom: 0.75em;
+    left: 0.25em;
+    width: 5em;
+    height: 5em;
+}
+
+.alienvierkantje2 {
+    position: absolute;
+    background-color: green;
+    bottom: 3.25em;
+    left: 0.25em;
+    width: 5em;
+    height: 5em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.oog1 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: white;
+    bottom: 7em;
+    left: 1em;
+    width: 3em;
+    height: 3em;
+}
+
+.oog2 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: darkblue;
+    bottom: 7.5em;
+    left: 1.5em;
+    width: 2em;
+    height: 2em;
+}
+
+.oog3 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: white;
+    bottom: 8.5em;
+    left: 1.75em;
+    width: 0.75em;
+    height: 0.75em;
+}
+
+.oog4 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: white;
+    bottom: 4.5em;
+    left: 1.5em;
+    width: 2em;
+    height: 2em;
+}
+
+.oog5 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: darkblue;
+    bottom: 5em;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+}
+
+.oog6 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: white;
+    bottom: 5.5em;
+    left: 2.25em;
+    width: 0.25em;
+    height: 0.25em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.mond1 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: black;
+    bottom: 2.5em;
+    left: 1.75em;
+    width: 1.75em;
+    height: 1.75em;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+.mond2 {
+    position: absolute;
+    border-radius: 100%;
+    background-color: red;
+    bottom: 2.85em;
+    left: 2.15em;
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+/*------------------------------------------------------------------------------------------*/
+.antenne {
+    position: absolute;
+    background-color: greenyellow;
+    bottom: 11em;
+    left: 2.25em;
+    width: 0.5em;
+    height: 2.5em;
+}
+
+.antennebolletje {
+    position: absolute;
+    border-radius: 100%;
+    background-color: greenyellow;
+    bottom: 13em;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.armlinks {
+    position: absolute;
+    transform-origin: 0.5em 0.5em;
+    background-color: greenyellow;
+    width: 1.5em;
+    height: 4em;
+    bottom: 3em;
+    left: -1em;
+    border-radius: 1em 1em 1em 1em;
+    transform: rotate(15deg);
+}
+
+.armrechts {
+    position: absolute;
+    transform-origin: 0.5em 0.5em;
+    background-color: greenyellow;
+    width: 1.5em;
+    height: 4em;
+    bottom: 3em;
+    left: 4em;
+    border-radius: 1em 1em 1em 1em;
+    transform: rotate(-30deg);
+}
+
+.armrechtsgo {
+    animation-name: armrechtskeyframe;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 20s;
+}
+
+@keyframes armrechtskeyframe {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(-120deg);
+    }
+}
+
+/*----------------------------------------------------------------------------------------*/
+.voeten {
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+}
+
+.linkervoet1 {
+    position: absolute;
+    background-color: limegreen;
+    border-radius: 50%;
+    bottom: 2em;
+    left: -0.5em;
+    width: 3em;
+    height: 3em;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.rechtervoet1 {
+    position: absolute;
+    background-color: limegreen;
+    border-radius: 50%;
+    bottom: 2em;
+    left: 3.5em;
+    width: 3em;
+    height: 3em;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.linkervoet2 {
+    position: absolute;
+    background-color: green;
+    border-radius: 50%;
+    bottom: 1.75em;
+    left: -0.25em;
+    width: 3em;
+    height: 3em;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.rechtervoet2 {
+    position: absolute;
+    background-color: green;
+    border-radius: 50%;
+    bottom: 1.75em;
+    left: 3.75em;
+    width: 3em;
+    height: 3em;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*--------------------------------tekstwolkje-animatie------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.tekstwolkje {
+    position: absolute;
+    bottom: 39em;
+    right: 65em;
+    opacity: 0;
+    transform-origin: 40em 5em;
+}
+
+.wolkje1 {
+    left: 4em;
+    bottom: 0;
+    width: 26em;
+    height: 10em;
+    background-color: white;
+    position: absolute;
+    -moz-border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    border-radius: 1.5em;
+}
+
+.wolkje1:before {
+    content: "";
+    position: absolute;
+    right: -1.3em;
+    transform: rotate(180deg);
+    top: 6em;
+    width: 0;
+    height: 0;
+    border-top: 1em solid transparent;
+    border-right: 1.5em solid white;
+    border-bottom: 1em solid transparent;
+}
+
+.wolkje2 {
+    left: 3.6em;
+    bottom: -0.4em;
+    width: 26.8em;
+    height: 10.8em;
+    background-color: #ae4033;
+    position: absolute;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+}
+
+.wolkje2:before {
+    content: "";
+    position: absolute;
+    right: -1.5em;
+    transform: rotate(180deg);
+    top: 6.4em;
+    width: 0;
+    height: 0;
+    border-top: 1em solid transparent;
+    border-right: 1.5em solid #ae4033;
+    border-bottom: 1em solid transparent;
+}
+
+.tekst1 {
+    width: 20em;
+    height: 10em;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    bottom: -1.5em;
+    left: 5em;
+    font-size: 20px;
+    color: #ae4033;
+}
+
+.tekstwolkjego {
+    animation-name: tekstwolkjekeyframe;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 21s;
+}
+
+@keyframes tekstwolkjekeyframe {
+    0% {
+        transform: scale(75%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
