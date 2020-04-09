@@ -1,0 +1,59 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.icoon1 {
+    width: 6em;
+    height: 6em;
+    position: absolute;
+    top: 49.5em;
+    left: 45.8em;
+    background-color: red;
+    opacity: 0.5;
+}
+
+.icoon2 {
+    width: 6em;
+    height: 6em;
+    position: absolute;
+    top: 49.5em;
+    left: 57em;
+    background-color: green;
+    opacity: 0.5;
+}
+
+.icoon3 {
+    width: 6em;
+    height: 6em;
+    position: absolute;
+    top: 49.5em;
+    left: 68.2em;
+    background-color: blue; 
+    opacity: 0.5;
+}
+
+.icoon4 {
+    width: 22em;
+    height: 43em;
+    position: absolute;
+    top: 5em;
+    left: 49em;
+    background-color: yellow;
+    opacity: 0.5;
+}
+
+
+#zerostate {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
